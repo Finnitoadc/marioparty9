@@ -2,6 +2,7 @@
 object: orig/SSQE01/sys/main.dol
 hash: afe7ff0100ddd758ffa7980f18de3eacd8a04659
 symbols: config/SSQE01/symbols.txt
+ldscript_template: config/SSQE01/ldscript.tpl
 splits: config/SSQE01/splits.txt
 # Change this to match the linker verison.
 # See config.example.yml for a list.
