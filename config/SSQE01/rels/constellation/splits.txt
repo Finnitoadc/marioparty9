@@ -146,6 +146,9 @@ REL/shared/g_08918d04.cpp:
 REL/shared/g_1c8acefe.cpp:
 	.text       start:0x0001BE40 end:0x0001BE48
 
+REL/shared/g_5e488482.cpp:
+	.text       start:0x0001BFC0 end:0x0001C074
+
 REL/shared/g_bee893b6.cpp:
 	.text       start:0x0001D2F0 end:0x0001D304
 

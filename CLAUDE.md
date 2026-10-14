@@ -26,6 +26,9 @@ En Windows la shell es Git Bash: las barras invertidas se pierden en heredocs; u
   muchos REL (librerías inline/plantillas). Un `.cpp` cubre todas las copias: se compila una
   vez por módulo. Es la vía con más rendimiento (~80% de las funciones REL son copias).
 - `tools/mp9/data/cand2.json` — grupos candidatos (asm normalizado + dónde está cada copia).
+  Se amplía con `python tools/mp9/cand_extend.py <min_módulos> <max_instr>` (tras un `ninja`
+  completo): agrega grupos nuevos sin tocar los existentes ni repetir funciones ya agrupadas.
+  Hoy incluye grupos de ≥3 módulos y ≤120 instrucciones.
 - `tools/mp9/data/skip.txt` — grupos que se intentaron y no salieron, con el motivo.
 - `tools/mp9/data/nonmatching.txt` — grupos registrados como `NonMatching`.
 - `tools/mp9/wip/` — intentos sin terminar (no se compilan).
@@ -95,8 +98,33 @@ python configure.py && ninja          # tiene que decir 116 files OK
 - Los nombres de la DOL pueden cambiar (p. ej. `fn_8020BDC8` → `__ptmf_test`). `cand2.json`
   tiene los nombres viejos y `trytext.py` los traduce con su tabla `ALIAS`. No llamar a
   funciones por el nombre viejo en el código.
-- Sin resolver todavía: diferencias puras de scheduling/asignación de registros
-  (ver `skip.txt`).
+- **Solo rutinas hoja en asm**: si una función tiene prólogo o `bl`, es C con paired singles
+  inlineados; escribirla entera en asm no cuenta como decompilada (va a `wip/`).
+- `fn_8020B514` es `operator new`: `void* p = fn_8020B514(size); if (p) p = ctor(p);`
+  (ver `g_1f25f6da.cpp`). `fn_8020BCD0(arr, dtor, size, n)` es `__destroy_arr`; pasar el
+  destructor como `(void*)shared_g_XXXX`.
+- `delete p` sobre un objeto con `virtual ~T()` da la vcall del slot 0x8 con `li r4, 1`; la
+  llamada explícita `p->~T()` da `li r4, -1`. No agregar un `if (p)` propio: `delete` ya
+  comprueba null y saldría un `beq` duplicado.
+- Puntero local a un miembro + método inline (`Ptr* p = &self->m; if (p != 0) p->Release();`)
+  da `addic. r3, rX, off` y las cargas a través de r3 (ver `g_69c2e268.cpp`).
+- Copia campo a campo con cada carga seguida de su store: origen por puntero **no const**
+  (el compilador supone aliasing). Con `const` o asignación de struct agrupa las cargas.
+- Tres cargas float con registros invertidos: declarar `float z; float y; float x;` y asignar
+  después (ver `g_5fb84994.cpp`).
+- Si un bucle sale con contador/offset en registros cambiados, moverlo a un método inline del
+  contenedor (ver `g_67f78c2c.cpp`). Iteradores de plantilla: recibirlos por `It&`.
+- `std::min/max` sobre `const float&` (`return a < b ? ...`) reproduce las cadenas
+  `fcmpo`/selección de puntero (`g_585af956.cpp`).
+- Comparación de punteros como bool: `cur >= start` da `orc`/`srwi 31`; `cur < start` da
+  `xor`/`cntlzw`.
+- Campos `bool`: `!b` da `cntlzw`+`srwi 5`; con `unsigned char` sale `extrwi`.
+- Strings con SSO: bit `isLong:1` en la palabra 0, longitud corta `*(unsigned char*)this & 0x7F`,
+  larga en +4, puntero en +8; `char` es unsigned en este compilador (usar `signed char` si hay
+  `extsb`). Bucle de búsqueda: `int i` contra `unsigned n` (`g_35badb40.cpp`).
+- Sin resolver todavía: diferencias puras de scheduling/asignación de registros, en especial
+  el orden `slwi`/`subf` en `clear()` de vectores de elementos virtuales y las copias de
+  globales con `lwzu` (ver `skip.txt`).
 
 ## Trabajar entre varios
 

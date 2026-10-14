@@ -40,7 +40,8 @@ def norm(ls, base=None):
     return out
 ALIAS = {'__ptmf_test': 'fn_8020BDC8', '__ptmf_scall': 'fn_8020BE34'}  # DOL symbols renamed after cand2.json was built
 mine = [re.sub(r'(' + '|'.join(ALIAS) + r')', lambda m: ALIAS[m.group(1)], l) for l in mine]
-a, b = norm(g['asm'], tbase(g['asm'])), norm(mine, mbase)
+tasm = [re.sub(r'(' + '|'.join(ALIAS) + r')', lambda m: ALIAS[m.group(1)], l) for l in g['asm']]
+a, b = norm(tasm, tbase(tasm)), norm(mine, mbase)
 TAIL = a and (a[-1].startswith('b ') or a[-1].startswith('bctr')) and not a[-1].startswith('blr')
 if TAIL and b == a + ['blr']:
     print('MATCH 100% (+blr)', len(a), 'instr'); sys.exit(0)

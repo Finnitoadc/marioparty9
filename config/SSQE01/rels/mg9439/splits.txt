@@ -62,14 +62,23 @@ REL/shared/g_9cb1aa21.cpp:
 REL/shared/g_612e9552.cpp:
 	.text       start:0x00008800 end:0x00008884
 
+REL/shared/g_2123ba95.cpp:
+	.text       start:0x000088E0 end:0x00008900
+
 REL/shared/g_5d6d3818.cpp:
 	.text       start:0x00009B30 end:0x00009B38
 
 REL/shared/g_ea440d20.cpp:
 	.text       start:0x00009B50 end:0x00009B58
 
+REL/shared/g_54345a3f.cpp:
+	.text       start:0x00009C30 end:0x00009C38
+
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x0000D110 end:0x0000D174
+
+REL/shared/g_560134cd.cpp:
+	.text       start:0x0000E100 end:0x0000E10C
 
 REL/shared/g_3c6dca95.cpp:
 	.text       start:0x0000E590 end:0x0000E5CC
@@ -88,6 +97,9 @@ REL/shared/g_16623138.cpp:
 
 REL/shared/g_71e4e6b1.cpp:
 	.text       start:0x0000E7F0 end:0x0000E80C
+
+REL/shared/g_585af956.cpp:
+	.text       start:0x0000F090 end:0x0000F188
 
 REL/shared/g_1f818a75.cpp:
 	.text       start:0x000109B0 end:0x000109BC
@@ -332,11 +344,20 @@ REL/shared/g_08918d04.cpp:
 REL/shared/g_1c8acefe.cpp:
 	.text       start:0x0002E5E0 end:0x0002E5E8
 
+REL/shared/g_5e488482.cpp:
+	.text       start:0x0002E760 end:0x0002E814
+
+REL/shared/g_0c397b77.cpp:
+	.text       start:0x0002EC10 end:0x0002ECD4
+
 REL/shared/g_2a66679b.cpp:
 	.text       start:0x0002F400 end:0x0002F418
 
 REL/shared/g_b49efece.cpp:
 	.text       start:0x0002F640 end:0x0002F648
+
+REL/shared/g_2de322b8.cpp:
+	.text       start:0x0002FAE0 end:0x0002FC4C
 
 REL/shared/g_c9b7496b.cpp:
 	.text       start:0x0002FF00 end:0x0002FF0C
@@ -446,6 +467,9 @@ REL/shared/g_04f6cca6.cpp:
 REL/shared/g_406a62da.cpp:
 	.text       start:0x00039A60 end:0x00039A7C
 
+REL/shared/g_0f30ad1d.cpp:
+	.text       start:0x00039B80 end:0x00039C28
+
 REL/shared/g_4e0b62d3.cpp:
 	.text       start:0x00039CD0 end:0x00039CD8
 
@@ -463,6 +487,9 @@ REL/shared/g_c9686c3b.cpp:
 
 REL/shared/g_98a2ed67.cpp:
 	.text       start:0x0003A3C0 end:0x0003A3DC
+
+REL/shared/g_732f46da.cpp:
+	.text       start:0x0003A4F0 end:0x0003A5A4
 
 REL/shared/g_13ac7a27.cpp:
 	.text       start:0x0003A5B0 end:0x0003A5E4

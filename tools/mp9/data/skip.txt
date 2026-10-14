@@ -28,3 +28,25 @@ a602948a copia de global con lwzu
 35c86b6f frsp/stwu orden
 118f3d6e numeracion de registros float
 3b338a64 orden li r8 / stw r9
+34b0b47d cadena lineal cmpwi/beq (switch) no reproducida
+006e3070 clear de vector: r0/r3 intercambiados
+462e0826 clear de vector: r0/r3 intercambiados
+78f777f2 copia de global con lwzu
+1c75091c 107 instr con paired singles inline
+596e1416 iteradores por valor en pila: lbz vs lwz
+085a5cf8 clear de vector: orden slwi/subf
+74b89e6f li r0,1 antes de stw r8 (scheduling)
+1a164e83 erase de ring buffer: registros r6/r7
+7b6dc4e9 copia de ring buffer: stw antes de cmpw
+3db6ce86 destructor 3 buffers: scheduling
+093c28ca destructor de array virtual: orden slwi/subf
+24e6596a copia Mtx por valor: orden de stores + epilogo
+473ec29d bucle de busqueda: registros
+3ca975e1 funcion C con paired singles inline (solo sale como asm completo)
+490f61b3 destructor array virtual: orden slwi/subf
+77dd7627 destructor array virtual: orden slwi/subf
+31f4389c copias de Vec: scheduling
+4bee4272 copia a pila despues de addi
+2394a32c copia a pila despues de addi
+22813f98 recarga de count en bucle ctr
+469edf94 orden stw 0x184 / addi

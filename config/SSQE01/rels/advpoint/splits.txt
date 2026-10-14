@@ -130,3 +130,6 @@ REL/shared/g_08918d04.cpp:
 
 REL/shared/g_1c8acefe.cpp:
 	.text       start:0x00016760 end:0x00016768
+
+REL/shared/g_5e488482.cpp:
+	.text       start:0x000168E0 end:0x00016994
