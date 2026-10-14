@@ -35,6 +35,7 @@ En Windows la shell es Git Bash: las barras invertidas se pierden en heredocs; u
 ```sh
 python tools/mp9/progress.py          # % de funciones/bytes REL coincidentes
 python tools/mp9/queue.py 30          # próximos grupos pendientes (más copias primero)
+python tools/mp9/show.py <hash8>      # asm completo del grupo (saltos como .L+N)
 # escribir src/REL/shared/g_<hash8>.cpp con la función extern "C" shared_g_<hash8>
 python tools/mp9/trytext.py <hash8>   # compila y compara con el asm del grupo
 python tools/mp9/sync.py              # registra todo lo de src/REL/shared (idempotente)
@@ -72,8 +73,30 @@ python configure.py && ninja          # tiene que decir 116 files OK
 - Copia de struct de 12 bytes `lwz r4,0; lwz r0,4; stw r0,4; stw r4,0; lwz r0,8; stw r0,8`:
   sale con locales `int` explícitos guardando `y` antes que `x` (ver `g_e81a5b7e.cpp`).
 - Escribir los `return` tempranos primero; `a || b` vs `!a && b` cambia destinos de salto.
-- Sin resolver todavía: `x - x` que el compilador no simplifica, diferencias puras de
-  scheduling/asignación de registros (ver `skip.txt`).
+  En un `srwi.` de un bit, escribir el ternario con la condición negada (`!o->bit ? a : b`).
+- **Punteros a miembro**: `addi r12, ...; bl __ptmf_scall; nop` (y `bl __ptmf_test`) salen de
+  `typedef void (Obj::*Func)(); if (self->func) (self->*(self->func))();` (ver `g_28d28ab6.cpp`).
+  `return !self->func;` da el test solo.
+- **`subf r0, r0, r0` (x - x que no se simplifica)**: es un `clear()` tipo vector inlineado:
+  `char* Begin(){return data;} char* End(){return data+count;}
+  void Erase(char* f, char* l){count -= l - f;}` y `Erase(Begin(), End())` (ver `g_258c18a0.cpp`).
+  Los `beq` repetidos antes son `if (b != 0)` anidados (usar un puntero local `Buffer* b`).
+- **Todas las cargas y luego todos los stores** (registros en orden inverso):
+  - pasar el struct por valor: `void f(S* dst, S src) { *dst = src; }` (copias de 16/48 bytes);
+  - o recibirlo por `const S&` (`g_620c69e4.cpp`);
+  - o meter las locales en un `static inline` que reciba `const S&` (`g_032f8a2f.cpp`).
+- `const Obj* self` cambia el scheduling (sube un `lfs` por encima del `stwu`).
+- Declarar las locales en orden inverso cambia qué registro recibe cada una.
+- Devolver un struct de 12 bytes por valor (puntero oculto en r3): `return Vec(a, b, c);`.
+- `andi. 0xfd` + `ori 2` sale de `p[0xBB] &= 0xFD; p[0xBB] |= 2;`.
+- **Paired singles** (`psq_l`, `ps_*`): son rutinas asm del SDK (PSVECAdd, PSVECDotProduct…).
+  Se escriben como `extern "C" asm void f(...) { nofralloc ... blr }` copiando el asm
+  (ver `g_007f666f.cpp`).
+- Los nombres de la DOL pueden cambiar (p. ej. `fn_8020BDC8` → `__ptmf_test`). `cand2.json`
+  tiene los nombres viejos y `trytext.py` los traduce con su tabla `ALIAS`. No llamar a
+  funciones por el nombre viejo en el código.
+- Sin resolver todavía: diferencias puras de scheduling/asignación de registros
+  (ver `skip.txt`).
 
 ## Trabajar entre varios
 
@@ -96,4 +119,9 @@ python configure.py && ninja          # tiene que decir 116 files OK
   `--theirs` solo para `config/SSQE01/rels`.
   (Para los `.cpp` de `src/REL/shared/` no hay conflictos: cada grupo es un archivo distinto.)
 - Anotar en `skip.txt` lo que no salió, así el otro no repite el intento.
+- **Con agentes en paralelo** (en el mismo checkout): darle a cada agente una lista de hashes
+  distinta, de tu rango. Los agentes solo crean `src/REL/shared/g_<hash>.cpp` (o lo mueven a
+  `tools/mp9/wip/` si no sale) y prueban con `trytext.py`, que usa archivos temporales por
+  hash, así que no chocan entre sí. **No** deben correr `ninja`, `configure.py`, `sync.py` ni
+  git: eso lo hace una sola sesión al final (`sync.py` → `ninja` → commit).
 - No hacer commit de `build/`, `orig/` ni nada del juego.

@@ -56,6 +56,9 @@ REL/shared/g_d8067967.cpp:
 REL/shared/g_16f8c90a.cpp:
 	.text       start:0x00033CD0 end:0x00033CF4
 
+REL/shared/g_2340a535.cpp:
+	.text       start:0x00035850 end:0x000358C8
+
 REL/shared/g_049107ea.cpp:
 	.text       start:0x00035960 end:0x000359B8
 
@@ -76,6 +79,9 @@ REL/shared/g_ed5b9fcb.cpp:
 
 REL/shared/g_9cb1aa21.cpp:
 	.text       start:0x00037E60 end:0x00037E68
+
+REL/shared/g_612e9552.cpp:
+	.text       start:0x00038820 end:0x000388A4
 
 REL/shared/g_81cb76c8.cpp:
 	.text       start:0x000388B0 end:0x000388B8
@@ -110,6 +116,9 @@ REL/shared/g_aa6fa5e5.cpp:
 REL/shared/g_99034325.cpp:
 	.text       start:0x0003B5E0 end:0x0003B5EC
 
+REL/shared/g_48cc7478.cpp:
+	.text       start:0x0003BE10 end:0x0003BE9C
+
 REL/shared/g_dd67ff80.cpp:
 	.text       start:0x0003C500 end:0x0003C51C
 
@@ -137,6 +146,9 @@ REL/shared/g_c821974a.cpp:
 REL/shared/g_d56e9ead.cpp:
 	.text       start:0x00040050 end:0x00040070
 
+REL/shared/g_793851c9.cpp:
+	.text       start:0x00040080 end:0x000400B0
+
 REL/shared/g_5d6d3818.cpp:
 	.text       start:0x00040580 end:0x00040588
 
@@ -161,8 +173,14 @@ REL/shared/g_9f80cc13.cpp:
 REL/shared/g_fcdc4bbc.cpp:
 	.text       start:0x00040770 end:0x0004078C
 
+REL/shared/g_2cf61056.cpp:
+	.text       start:0x00040E40 end:0x00040E50
+
 REL/shared/g_6ee7942b.cpp:
 	.text       start:0x00040F90 end:0x00040F9C
+
+REL/shared/g_6cb07742.cpp:
+	.text       start:0x00041040 end:0x00041064
 
 REL/shared/g_ef139bc0.cpp:
 	.text       start:0x000412E0 end:0x000412F4
@@ -209,6 +227,9 @@ REL/shared/g_3b5a3f0e.cpp:
 REL/shared/g_584ef421.cpp:
 	.text       start:0x00047770 end:0x000477C8
 
+REL/shared/g_2610fd88.cpp:
+	.text       start:0x000477D0 end:0x00047860
+
 REL/shared/g_3fbfb018.cpp:
 	.text       start:0x00048510 end:0x0004851C
 
@@ -217,6 +238,9 @@ REL/shared/g_11e271f9.cpp:
 
 REL/shared/g_23fc310e.cpp:
 	.text       start:0x00048B00 end:0x00048B84
+
+REL/shared/g_6750f80c.cpp:
+	.text       start:0x00049870 end:0x000498B8
 
 REL/shared/g_526fe2bf.cpp:
 	.text       start:0x0004B890 end:0x0004B89C

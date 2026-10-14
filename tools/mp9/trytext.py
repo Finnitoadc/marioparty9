@@ -10,13 +10,13 @@ g = groups[h8]
 txt = re.sub(r'[$]\r?\n +', '', open('build.ninja').read())
 m = re.search(r'build build.SSQE01.src.REL.shared.zero3[.]o:[^\n]*\n  mw_version = (\S+)\n  cflags = ([^\n]*)', txt)
 ver, flags = m.group(1), m.group(2).strip()
-cmd = ('build/tools/sjiswrap.exe build/compilers/' + ver + '/mwcceppc.exe ' + flags + ' -c ' + src + ' -o ' + T + '/tt.o').replace('/', BS)
+cmd = ('build/tools/sjiswrap.exe build/compilers/' + ver + '/mwcceppc.exe ' + flags + ' -c ' + src + ' -o ' + T + '/tt_' + h8 + '.o').replace('/', BS)
 r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
 if r.returncode:
     print('COMPILE ERROR', (r.stdout + r.stderr)[-500:]); sys.exit(1)
-subprocess.run(('build/tools/dtk.exe elf disasm ' + T + '/tt.o ' + T + '/tt.s').replace('/', BS), shell=True, capture_output=True)
+subprocess.run(('build/tools/dtk.exe elf disasm ' + T + '/tt_' + h8 + '.o ' + T + '/tt_' + h8 + '.s').replace('/', BS), shell=True, capture_output=True)
 cur = None; mine = []; mbase = None
-for l in open(T + '/tt.s', errors='ignore'):
+for l in open(T + '/tt_' + h8 + '.s', errors='ignore'):
     mm = re.match(r'\.fn (\S+),', l)
     if mm: cur = mm.group(1) if 'shared_g_' + h8 in mm.group(1) else None; mbase = None
     elif cur and l.startswith('/*'):
@@ -38,6 +38,8 @@ def norm(ls, base=None):
         l = re.sub(r'"?@\d+"?', 'X', l)
         out.append(l)
     return out
+ALIAS = {'__ptmf_test': 'fn_8020BDC8', '__ptmf_scall': 'fn_8020BE34'}  # DOL symbols renamed after cand2.json was built
+mine = [re.sub(r'(' + '|'.join(ALIAS) + r')', lambda m: ALIAS[m.group(1)], l) for l in mine]
 a, b = norm(g['asm'], tbase(g['asm'])), norm(mine, mbase)
 TAIL = a and (a[-1].startswith('b ') or a[-1].startswith('bctr')) and not a[-1].startswith('blr')
 if TAIL and b == a + ['blr']:

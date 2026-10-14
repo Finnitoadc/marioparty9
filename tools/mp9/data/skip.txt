@@ -1,13 +1,10 @@
 a12d4fd1 x-x no se simplifica
-2340a535 x-x no se simplifica
 03db74c3 doble lectura no CSE
-6750f80c bl+nop
 fe128690 vcall con vptr en +4
 aa2bbe61 x-x no se simplifica
 ae7ec074 bucle de 4 con dos punteros
 ee4ce55d orden de stb/stw en rama
 882c3c25 varias llamadas, pendiente
-6cb07742 copia de 16 bytes: orden de lwz/stw
 ed7f4dd6 copia de 17 bytes: orden de lwz/stw
 dc28b563 orden stw/cmplw
 c714083c x-x no se simplifica
@@ -17,7 +14,6 @@ c714083c x-x no se simplifica
 a8bddcc9 contenedor circular (iterador)
 bc5dc92f contenedor circular (iterador)
 c6cb6ae5 copia a pila sin usar
-620c69e4 orden de registros f0/f3 en copia de Vec
 cb899a01 orden stb/stw (scheduler)
 03322023 orden stw/cmplw (scheduler)
 45ec0e55 orden stw/add (scheduler)
@@ -25,5 +21,10 @@ a50d6af2 orden prologo/epilogo fpr
 23bfba79 orden stb 781/780
 d8b5d9e9 orden de incrementos en bucle
 d39d8cc2 copia campo a campo: orden de registros
-36649956 copia de 4 bytes: orden de registros
 a602948a copia de global con lwzu
+59da3235 scheduling: stw 0x2c antes de fcmpo, copia de global con lwzu
+0547584a epilogo: lwz r0 antes de psq_l (version float de 4da5d0b8)
+28dc4f54 copia de global con lwzu: stores 0x3c/0x40 invertidos
+35c86b6f frsp/stwu orden
+118f3d6e numeracion de registros float
+3b338a64 orden li r8 / stw r9

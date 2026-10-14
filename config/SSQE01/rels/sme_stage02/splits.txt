@@ -35,6 +35,9 @@ REL/shared/g_16f8c90a.cpp:
 REL/shared/zero3.cpp:
 	.text       start:0x0001BE90 end:0x0001BEA4
 
+REL/shared/g_2340a535.cpp:
+	.text       start:0x0001BEB0 end:0x0001BF28
+
 REL/shared/g_049107ea.cpp:
 	.text       start:0x0001BFC0 end:0x0001C018
 

@@ -79,3 +79,6 @@ REL/shared/g_d8067967.cpp:
 
 REL/shared/g_ce9b1a7d.cpp:
 	.text       start:0x00014470 end:0x0001447C
+
+REL/shared/g_2340a535.cpp:
+	.text       start:0x000152B0 end:0x00015328
