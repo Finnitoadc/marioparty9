@@ -1,0 +1,9 @@
+Sections:
+	.text       type:code align:32
+	.ctors      type:rodata align:32
+	.dtors      type:rodata align:32
+	.rodata     type:rodata align:32
+
+REL/Introduction/Introduction.c:
+	.text       start:0x00000000 end:0x00000104
+	.rodata     start:0x00000000 end:0x00000048

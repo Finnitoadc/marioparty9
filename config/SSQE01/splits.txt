@@ -13,6 +13,16 @@ Sections:
 	.sbss2      type:bss align:32
 	.bss        type:bss align:64
 
+Game/test_last_elem.c:
+	.text       start:0x8000C5C0 end:0x8000C5D8
+
+Game/test_getter.c:
+	.text       start:0x8000DE90 end:0x8000DE98
+
+Runtime.PPCEABI.H/global_destructor_chain.c:
+	.text       start:0x8020B4B4 end:0x8020B514
+	.sbss       start:0x8026EE08 end:0x8026EE0C
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x8020C668 end:0x8020C6D8
 	.ctors      start:0x80220520 end:0x80220524 rename:.ctors$10

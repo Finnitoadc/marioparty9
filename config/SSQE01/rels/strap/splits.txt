@@ -1,0 +1,20 @@
+Sections:
+	.text       type:code align:32
+	.ctors      type:rodata align:32
+	.dtors      type:rodata align:32
+	.rodata     type:rodata align:32
+	.data       type:data align:32
+	.bss        type:bss align:32
+
+REL/strap/strap_main.cpp:
+	.text       start:0x00000000 end:0x000003E0
+	.ctors      start:0x00000000 end:0x00000004
+	.rodata     start:0x00000000 end:0x00000010
+	.data       start:0x00000000 end:0x00000030
+	.bss        start:0x00000000 end:0x00000008
+
+REL/strap/strap_base.cpp:
+	.text       start:0x000003E0 end:0x0000065C
+	.rodata     start:0x00000010 end:0x00000014
+	.data       start:0x00000030 end:0x00000054
+	.bss        start:0x00000008 end:0x0000000C

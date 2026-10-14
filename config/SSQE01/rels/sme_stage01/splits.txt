@@ -1,0 +1,60 @@
+Sections:
+	.text       type:code align:32
+	.ctors      type:rodata align:32
+	.dtors      type:rodata align:32
+	.rodata     type:rodata align:32
+	.data       type:data align:32
+	.bss        type:bss align:32
+
+REL/global_destructor_chain.c:
+	.text       start:0x00000000 end:0x00000074
+	.dtors      start:0x00000000 end:0x00000004
+	.bss        start:0x00000000 end:0x00000004
+
+REL/shared/g_21cf1dfc.cpp:
+	.text       start:0x00000150 end:0x000001B4
+
+REL/shared/g_b640e006.cpp:
+	.text       start:0x00009280 end:0x000092C0
+
+REL/shared/g_40f6f4db.cpp:
+	.text       start:0x0000C560 end:0x0000C568
+
+REL/shared/g_2b726490.cpp:
+	.text       start:0x00019700 end:0x0001976C
+
+REL/shared/g_ba7a6941.cpp:
+	.text       start:0x0001AAA0 end:0x0001AB40
+
+REL/shared/g_d8067967.cpp:
+	.text       start:0x0001AB40 end:0x0001ABB4
+
+REL/shared/g_16f8c90a.cpp:
+	.text       start:0x0001AC70 end:0x0001AC94
+
+REL/shared/zero3.cpp:
+	.text       start:0x0001BE20 end:0x0001BE34
+
+REL/shared/g_049107ea.cpp:
+	.text       start:0x0001BF50 end:0x0001BFA8
+
+REL/shared/g_cb89c715.cpp:
+	.text       start:0x0001C430 end:0x0001C4B4
+
+REL/shared/g_594a08e0.cpp:
+	.text       start:0x0001CB70 end:0x0001CBC4
+
+REL/shared/g_28836af6.cpp:
+	.text       start:0x0001D890 end:0x0001D8A8
+
+REL/shared/g_76e25039.cpp:
+	.text       start:0x0001DCF0 end:0x0001DCF8
+
+REL/shared/g_c28ef4b7.cpp:
+	.text       start:0x0001F030 end:0x0001F038
+
+REL/shared/g_c77ac150.cpp:
+	.text       start:0x0001F040 end:0x0001F060
+
+REL/shared/g_23fc310e.cpp:
+	.text       start:0x000200C0 end:0x00020144
