@@ -110,6 +110,9 @@ REL/shared/g_56f7e213.cpp:
 REL/shared/g_40e3f266.cpp:
 	.text       start:0x00017500 end:0x00017508
 
+REL/shared/g_15e0da38.cpp:
+	.text       start:0x00019E10 end:0x00019E1C
+
 REL/shared/g_6c3db20a.cpp:
 	.text       start:0x0001C800 end:0x0001C818
 

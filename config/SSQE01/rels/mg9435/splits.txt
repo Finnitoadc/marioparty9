@@ -95,6 +95,9 @@ REL/shared/g_2340a535.cpp:
 REL/shared/g_1a9847c6.cpp:
 	.text       start:0x0000BEF0 end:0x0000BF04
 
+REL/shared/g_50230daa.cpp:
+	.text       start:0x0000DD30 end:0x0000DD58
+
 REL/shared/g_1df1645b.cpp:
 	.text       start:0x000108A0 end:0x000108A8
 

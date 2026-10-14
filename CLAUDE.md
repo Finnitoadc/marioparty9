@@ -122,6 +122,18 @@ python configure.py && ninja          # tiene que decir 116 files OK
 - Strings con SSO: bit `isLong:1` en la palabra 0, longitud corta `*(unsigned char*)this & 0x7F`,
   larga en +4, puntero en +8; `char` es unsigned en este compilador (usar `signed char` si hay
   `extsb`). Bucle de búsqueda: `int i` contra `unsigned n` (`g_35badb40.cpp`).
+- `li rN, 0` en un registro guardado antes de un `if` y un `stw rN` dentro: era un bucle de una
+  iteración sobre un array de 1 elemento (`for (int i = 0; i < 1; i++) { ... a[i] = 0; }`,
+  ver `g_67dcf62b.cpp`).
+- `if (p) { delete p; p = 0; }` da el doble `beq` antes de la vcall del destructor
+  (`g_1f1ae3a7.cpp`).
+- Destructor inline de un miembro anidado: escribir `if (&p->b != 0) { if (p->b.owned) ... }`
+  contra el padre, no con un puntero local, para obtener `addic. r0` (`g_2477a1f4.cpp`).
+- Comparación de strings estilo MSL: datos y tamaño en un solo if/else sobre `isLong`, y una
+  cadena `return -1 / 0 / 1` en vez de asignar a `r`. Las locales con `&` reciben slots de
+  pila en orden de declaración.
+- Un `long long` como primer miembro hace que la copia guarde la segunda palabra primero
+  (`lwz a; lwz b; stw b; stw a`).
 - Sin resolver todavía: diferencias puras de scheduling/asignación de registros, en especial
   el orden `slwi`/`subf` en `clear()` de vectores de elementos virtuales y las copias de
   globales con `lwzu` (ver `skip.txt`).

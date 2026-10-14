@@ -35,6 +35,9 @@ REL/shared/g_f05dcbd3.cpp:
 REL/shared/g_0a315e44.cpp:
 	.text       start:0x00007370 end:0x00007378
 
+REL/shared/g_32c784cb.cpp:
+	.text       start:0x00007C70 end:0x00007C78
+
 REL/shared/g_8ce78503.cpp:
 	.text       start:0x00007D10 end:0x00007D18
 

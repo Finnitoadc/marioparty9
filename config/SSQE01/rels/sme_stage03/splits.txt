@@ -14,6 +14,9 @@ REL/global_destructor_chain.c:
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x00000150 end:0x000001B4
 
+REL/shared/g_2477a1f4.cpp:
+	.text       start:0x00005380 end:0x00005448
+
 REL/shared/g_397fd4b9.cpp:
 	.text       start:0x00005570 end:0x000055D8
 
@@ -58,6 +61,12 @@ REL/shared/g_5054cb61.cpp:
 
 REL/shared/g_01329087.cpp:
 	.text       start:0x00013030 end:0x000130C4
+
+REL/shared/g_1f1ae3a7.cpp:
+	.text       start:0x00015FD0 end:0x000160EC
+
+REL/shared/g_67dcf62b.cpp:
+	.text       start:0x00016750 end:0x000167A0
 
 REL/shared/g_1f25f6da.cpp:
 	.text       start:0x00016D30 end:0x00016DA0

@@ -47,6 +47,12 @@ REL/shared/g_19121d07.cpp:
 REL/shared/g_584ef421.cpp:
 	.text       start:0x00011D90 end:0x00011DE8
 
+REL/shared/g_19740b2a.cpp:
+	.text       start:0x00012190 end:0x000121D0
+
+REL/shared/g_2acd7675.cpp:
+	.text       start:0x000124A0 end:0x000124EC
+
 REL/shared/g_8df7e362.cpp:
 	.text       start:0x000169E0 end:0x00016A04
 

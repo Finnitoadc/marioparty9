@@ -89,6 +89,9 @@ REL/shared/g_3951b4e8.cpp:
 REL/shared/g_19422d87.cpp:
 	.text       start:0x0000E2E0 end:0x0000E2EC
 
+REL/shared/g_720d6f6a.cpp:
+	.text       start:0x0000E2F0 end:0x0000E2FC
+
 REL/shared/g_86ca03d7.cpp:
 	.text       start:0x0000E3B0 end:0x0000E3CC
 

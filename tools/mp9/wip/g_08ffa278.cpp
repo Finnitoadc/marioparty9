@@ -14,28 +14,60 @@ struct String {
             char buf[11];
         } s;
         struct {
-            unsigned int cap;
+            unsigned int size_cap;
             unsigned int size;
             char* ptr;
         } l;
     };
 
     unsigned int Size() const { return !f.isLong ? (s.size & 0x7F) : l.size; }
-    const char* Data() const { const char* p; if (!f.isLong) { p = s.buf; } else { p = l.ptr; } return p; }
+    const char* Data() const { return !f.isLong ? s.buf : l.ptr; }
 
-    int Compare(const String& o) const {
-        const char* od = o.Data();
-        unsigned int osz = o.Size();
-        unsigned int rlen = Min(Size(), Size() - 0);
-        int r = fn_8021053C(Data(), od, Min(rlen, osz));
+    void Get(const char*& d, unsigned int& n) const {
+        if (!f.isLong) {
+            d = s.buf;
+            n = s.size & 0x7F;
+        } else {
+            d = l.ptr;
+            n = l.size;
+        }
+    }
+
+    int Compare(const String& o, unsigned int pos) const {
+        unsigned int rlen;
+        unsigned int left;
+        unsigned int n2;
+        unsigned int n1;
+        unsigned int sz;
+        const char* d;
+        const char* str;
+        unsigned int n;
+        if (!o.f.isLong) {
+            str = o.s.buf;
+            n = o.s.size & 0x7F;
+        } else {
+            str = o.l.ptr;
+            n = o.l.size;
+        }
+        n2 = n;
+        n1 = Size();
+        if (!f.isLong) {
+            d = ((const char*)&this->s) + 1;
+            sz = this->s.size & 0x7F;
+        } else {
+            d = l.ptr;
+            sz = l.size;
+        }
+        left = sz - pos;
+        rlen = Min(left, n1);
+        int r = fn_8021053C(d, str, Min(rlen, n2));
         if (r == 0) {
-            if (rlen < osz) {
-                r = -1;
-            } else if (rlen > osz) {
-                r = 1;
-            } else {
-                r = 0;
+            if (rlen < n) {
+                return -1;
+            } else if (rlen == n) {
+                return 0;
             }
+            return 1;
         }
         return r;
     }
@@ -54,14 +86,14 @@ struct Tree {
 };
 
 extern "C" Node* shared_g_08ffa278(Tree* t, const String& key, Node** out, unsigned char* a, unsigned char* b) {
+    Node* y = (Node*)&t->root;
+    Node* x = t->root;
     *out = 0;
     *a = 1;
     *b = 1;
-    Node* y = (Node*)&t->root;
-    Node* x = t->root;
     while (x != 0) {
         y = x;
-        if (key.Compare(x->key) < 0) {
+        if (key.Compare(x->key, 0) < 0) {
             x = x->left;
             *a = 1;
         } else {

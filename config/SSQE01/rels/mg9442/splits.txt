@@ -89,6 +89,9 @@ REL/shared/g_2340a535.cpp:
 REL/shared/g_1a9847c6.cpp:
 	.text       start:0x00015570 end:0x00015584
 
+REL/shared/g_50230daa.cpp:
+	.text       start:0x00017360 end:0x00017388
+
 REL/shared/g_46b37d57.cpp:
 	.text       start:0x00017600 end:0x00017678
 

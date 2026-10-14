@@ -767,6 +767,9 @@ REL/shared/g_26543eb4.cpp:
 REL/shared/g_164d9d07.cpp:
 	.text       start:0x000A9660 end:0x000A967C
 
+REL/shared/g_03e0e636.cpp:
+	.text       start:0x000A9970 end:0x000A9978
+
 REL/shared/g_1e84127c.cpp:
 	.text       start:0x000AD290 end:0x000AD3F8
 

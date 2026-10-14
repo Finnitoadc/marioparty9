@@ -50,3 +50,17 @@ a602948a copia de global con lwzu
 2394a32c copia a pila despues de addi
 22813f98 recarga de count en bucle ctr
 469edf94 orden stw 0x184 / addi
+48328375 intentado por agente (cortado), ver wip
+129c9ae5 intentado por agente (cortado), ver wip
+539598b4 intentado por agente (cortado), ver wip
+70b2019f intentado por agente (cortado), ver wip
+487bab9f intentado por agente (cortado), ver wip
+081fb4ad intentado por agente (cortado), ver wip
+511281b6 intentado por agente (cortado), ver wip
+158ba280 intentado por agente (cortado), ver wip
+11a593a4 paired singles inline: psq_l con addi previo
+08ffa278 compare de string: scheduling de stores a pila
+4f3ff1c3 asignacion de registros r9/r10/r11
+5ec1cc3d deque pop: orden de stores en copia de 48 bytes
+520f5b89 deque pop: igual que 5ec1cc3d
+390663e7 deque: store justo despues de calcular

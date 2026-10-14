@@ -863,6 +863,9 @@ REL/shared/g_4377f6df.cpp:
 REL/shared/g_60440d37.cpp:
 	.text       start:0x000D2E20 end:0x000D2E40
 
+REL/shared/g_5d4b559d.cpp:
+	.text       start:0x000D2EA0 end:0x000D2EBC
+
 REL/shared/g_35badb40.cpp:
 	.text       start:0x000D3B50 end:0x000D3BDC
 

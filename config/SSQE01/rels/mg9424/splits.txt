@@ -62,6 +62,9 @@ REL/shared/g_24830606.cpp:
 REL/shared/g_a57e5b0b.cpp:
 	.text       start:0x00005E20 end:0x00005E2C
 
+REL/shared/g_32c784cb.cpp:
+	.text       start:0x00005E30 end:0x00005E38
+
 REL/shared/g_a840b38e.cpp:
 	.text       start:0x00006AD0 end:0x00006AE0
 

@@ -938,6 +938,9 @@ REL/shared/g_4377f6df.cpp:
 REL/shared/g_60440d37.cpp:
 	.text       start:0x0010C910 end:0x0010C930
 
+REL/shared/g_5d4b559d.cpp:
+	.text       start:0x0010C990 end:0x0010C9AC
+
 REL/shared/g_35badb40.cpp:
 	.text       start:0x0010D6D0 end:0x0010D75C
 

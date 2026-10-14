@@ -83,6 +83,9 @@ REL/shared/g_3951b4e8.cpp:
 REL/shared/g_19422d87.cpp:
 	.text       start:0x00009B50 end:0x00009B5C
 
+REL/shared/g_720d6f6a.cpp:
+	.text       start:0x00009B60 end:0x00009B6C
+
 REL/shared/g_f70b5267.cpp:
 	.text       start:0x00009BD0 end:0x00009BDC
 

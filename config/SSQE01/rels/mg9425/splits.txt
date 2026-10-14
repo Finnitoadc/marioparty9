@@ -56,6 +56,12 @@ REL/shared/g_8df7e362.cpp:
 REL/shared/g_584ef421.cpp:
 	.text       start:0x0000D210 end:0x0000D268
 
+REL/shared/g_19740b2a.cpp:
+	.text       start:0x0000D430 end:0x0000D470
+
+REL/shared/g_2acd7675.cpp:
+	.text       start:0x0000D640 end:0x0000D68C
+
 REL/shared/g_16623138.cpp:
 	.text       start:0x0000DC30 end:0x0000DC4C
 
