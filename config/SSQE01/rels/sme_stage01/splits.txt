@@ -14,14 +14,26 @@ REL/global_destructor_chain.c:
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x00000150 end:0x000001B4
 
+REL/shared/g_ca968c6f.cpp:
+	.text       start:0x000052E0 end:0x00005368
+
 REL/shared/g_2477a1f4.cpp:
 	.text       start:0x00005390 end:0x00005458
+
+REL/shared/g_e464dd29.cpp:
+	.text       start:0x00005480 end:0x0000555C
 
 REL/shared/g_397fd4b9.cpp:
 	.text       start:0x00005580 end:0x000055E8
 
 REL/shared/g_8be8299f.cpp:
 	.text       start:0x00005B80 end:0x00005C24
+
+REL/shared/g_e6bbb3ca.cpp:
+	.text       start:0x00005C30 end:0x00005D24
+
+REL/shared/g_90031b8e.cpp:
+	.text       start:0x00009160 end:0x000091E8
 
 REL/shared/g_b640e006.cpp:
 	.text       start:0x00009280 end:0x000092C0
@@ -41,6 +53,9 @@ REL/shared/g_0f3731ac.cpp:
 REL/shared/g_3250f34b.cpp:
 	.text       start:0x0000AA40 end:0x0000AAB4
 
+REL/shared/g_93a5dd57.cpp:
+	.text       start:0x0000AAD0 end:0x0000AB58
+
 REL/shared/g_40f6f4db.cpp:
 	.text       start:0x0000C560 end:0x0000C568
 
@@ -58,6 +73,9 @@ REL/shared/g_8d21e9d1.cpp:
 
 REL/shared/g_791508ca.cpp:
 	.text       start:0x0000FE10 end:0x0000FEA8
+
+REL/shared/g_ba06a5cd.cpp:
+	.text       start:0x00011690 end:0x000116CC
 
 REL/shared/g_66da2fbd.cpp:
 	.text       start:0x000116D0 end:0x000116F8
@@ -83,6 +101,9 @@ REL/shared/g_5054cb61.cpp:
 REL/shared/g_01329087.cpp:
 	.text       start:0x000131B0 end:0x00013244
 
+REL/shared/g_c19423e4.cpp:
+	.text       start:0x00014890 end:0x000148F8
+
 REL/shared/g_c6e6783e.cpp:
 	.text       start:0x00014900 end:0x00014934
 
@@ -106,6 +127,9 @@ REL/shared/g_5dc3a96a.cpp:
 
 REL/shared/g_c7fab155.cpp:
 	.text       start:0x00018F60 end:0x00018F6C
+
+REL/shared/g_8c5d226d.cpp:
+	.text       start:0x000192E0 end:0x00019330
 
 REL/shared/g_f76eeed3.cpp:
 	.text       start:0x00019400 end:0x000194E0

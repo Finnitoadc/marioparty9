@@ -20,6 +20,9 @@ REL/shared/g_627244bb.cpp:
 REL/shared/g_b7d21b28.cpp:
 	.text       start:0x00000B90 end:0x00000BA4
 
+REL/shared/g_7d366abe.cpp:
+	.text       start:0x00001310 end:0x00001358
+
 REL/shared/g_d81af600.cpp:
 	.text       start:0x00004DA0 end:0x00004E10
 
@@ -49,6 +52,9 @@ REL/shared/g_b640e006.cpp:
 
 REL/shared/g_28d28ab6.cpp:
 	.text       start:0x000097A0 end:0x000097E8
+
+REL/shared/g_5f0e2319.cpp:
+	.text       start:0x0000BED0 end:0x0000BED8
 
 REL/shared/g_37973916.cpp:
 	.text       start:0x0000C0B0 end:0x0000C0B8

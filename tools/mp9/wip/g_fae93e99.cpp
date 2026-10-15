@@ -10,22 +10,22 @@ struct Tree {
     Node* root;
 };
 
-extern "C" Node* shared_g_fae93e99(Tree* t, unsigned* key, Node** out, char* a, char* b) {
+extern "C" Node* shared_g_fae93e99(Tree* t, unsigned* key, Node** out, bool* a, bool* b) {
     Node* res = (Node*)((char*)t + 4);
     *out = 0;
     Node* cur = t->root;
-    *a = 1;
-    *b = 1;
+    *a = true;
+    *b = true;
     while (cur != 0) {
         res = cur;
         if (*key < cur->key) {
             cur = cur->left;
-            *a = 1;
+            *a = true;
         } else {
             *out = cur;
             cur = cur->right;
-            *a = 0;
-            *b = 0;
+            *a = false;
+            *b = false;
         }
     }
     return res;

@@ -50,6 +50,9 @@ REL/shared/g_19740b2a.cpp:
 REL/shared/g_c52882d4.cpp:
 	.text       start:0x00011630 end:0x00011674
 
+REL/shared/g_bd6637fd.cpp:
+	.text       start:0x000117D0 end:0x000117E4
+
 REL/shared/g_2acd7675.cpp:
 	.text       start:0x00011ED0 end:0x00011F1C
 

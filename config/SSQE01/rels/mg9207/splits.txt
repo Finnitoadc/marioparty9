@@ -17,6 +17,12 @@ REL/shared/g_b640e006.cpp:
 REL/shared/g_807a1934.cpp:
 	.text       start:0x00000930 end:0x0000098C
 
+REL/shared/g_87c25471.cpp:
+	.text       start:0x00001920 end:0x00001978
+
+REL/shared/g_d90b907f.cpp:
+	.text       start:0x00002A70 end:0x00002A80
+
 REL/shared/g_1689cde3.cpp:
 	.text       start:0x00002A80 end:0x00002A88
 

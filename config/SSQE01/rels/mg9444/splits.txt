@@ -23,6 +23,9 @@ REL/shared/g_3951b4e8.cpp:
 REL/shared/g_a645d15c.cpp:
 	.text       start:0x00002080 end:0x00002098
 
+REL/shared/g_a028158b.cpp:
+	.text       start:0x00002620 end:0x00002634
+
 REL/shared/g_40e3f266.cpp:
 	.text       start:0x00003260 end:0x00003268
 

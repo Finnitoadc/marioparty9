@@ -77,6 +77,9 @@ REL/shared/g_ed5b9fcb.cpp:
 REL/shared/g_2d538699.cpp:
 	.text       start:0x0001ACD0 end:0x0001AD04
 
+REL/shared/g_564c98a4.cpp:
+	.text       start:0x0001C9B0 end:0x0001C9C0
+
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x0001F0E0 end:0x0001F144
 
@@ -107,6 +110,9 @@ REL/shared/g_2314100b.cpp:
 REL/shared/g_5ae2ba02.cpp:
 	.text       start:0x00021F70 end:0x00021F7C
 
+REL/shared/g_8b736067.cpp:
+	.text       start:0x000222C0 end:0x000222D8
+
 REL/shared/g_40f6f4db.cpp:
 	.text       start:0x00023F70 end:0x00023F78
 
@@ -118,6 +124,12 @@ REL/shared/g_1eb63bea.cpp:
 
 REL/shared/g_76e25039.cpp:
 	.text       start:0x00030B60 end:0x00030B68
+
+REL/shared/g_d7bbb115.cpp:
+	.text       start:0x000314A0 end:0x000314A8
+
+REL/shared/g_5b814380.cpp:
+	.text       start:0x00033420 end:0x000334A0
 
 REL/shared/zero3.cpp:
 	.text       start:0x00038BA0 end:0x00038BB4
@@ -818,11 +830,23 @@ REL/shared/g_235ab674.cpp:
 REL/shared/g_26543eb4.cpp:
 	.text       start:0x000BE530 end:0x000BE620
 
+REL/shared/g_735e5b14.cpp:
+	.text       start:0x000BFDD0 end:0x000BFDD8
+
 REL/shared/g_03e0e636.cpp:
 	.text       start:0x000C0080 end:0x000C0088
 
+REL/shared/g_6af4c60c.cpp:
+	.text       start:0x000C2200 end:0x000C2208
+
 REL/shared/g_f833949a.cpp:
 	.text       start:0x000C2230 end:0x000C2238
+
+REL/shared/g_d6a88ff8.cpp:
+	.text       start:0x000C4250 end:0x000C4298
+
+REL/shared/g_d39e4a29.cpp:
+	.text       start:0x000C42A0 end:0x000C42A8
 
 REL/shared/g_1e84127c.cpp:
 	.text       start:0x000C7C80 end:0x000C7DE8
@@ -904,6 +928,9 @@ REL/shared/g_8ce78503.cpp:
 
 REL/shared/g_30b68bd2.cpp:
 	.text       start:0x000DE560 end:0x000DE594
+
+REL/shared/g_a219eb71.cpp:
+	.text       start:0x000DE640 end:0x000DE654
 
 REL/shared/g_606c8d19.cpp:
 	.text       start:0x000DE660 end:0x000DE668
@@ -1022,6 +1049,9 @@ REL/shared/g_86b330a1.cpp:
 REL/shared/g_31a7c03e.cpp:
 	.text       start:0x000FAC20 end:0x000FACBC
 
+REL/shared/g_d696b6f6.cpp:
+	.text       start:0x000FACC0 end:0x000FAD38
+
 REL/shared/g_7076ed87.cpp:
 	.text       start:0x000FB130 end:0x000FB138
 
@@ -1066,6 +1096,9 @@ REL/shared/g_b1be7b72.cpp:
 
 REL/shared/g_8957f4ef.cpp:
 	.text       start:0x000FBF90 end:0x000FBF9C
+
+REL/shared/g_d4de7164.cpp:
+	.text       start:0x000FBFA0 end:0x000FBFDC
 
 REL/shared/g_4377f6df.cpp:
 	.text       start:0x000FBFE0 end:0x000FC000
@@ -1238,6 +1271,9 @@ REL/shared/g_563a1633.cpp:
 REL/shared/g_53e342af.cpp:
 	.text       start:0x0011F250 end:0x0011F25C
 
+REL/shared/g_804b152a.cpp:
+	.text       start:0x0011F260 end:0x0011F268
+
 REL/shared/g_d24b02fa.cpp:
 	.text       start:0x0011F270 end:0x0011F278
 
@@ -1256,8 +1292,14 @@ REL/shared/g_1534e8a0.cpp:
 REL/shared/g_b18e4b3c.cpp:
 	.text       start:0x0011FF40 end:0x0011FF48
 
+REL/shared/g_ed7a00b6.cpp:
+	.text       start:0x00120060 end:0x0012006C
+
 REL/shared/g_ceafd3dc.cpp:
 	.text       start:0x00120070 end:0x0012007C
+
+REL/shared/g_c1777230.cpp:
+	.text       start:0x00120080 end:0x0012008C
 
 REL/shared/g_7d81d4ca.cpp:
 	.text       start:0x001201B0 end:0x001201C0
@@ -1274,6 +1316,9 @@ REL/shared/g_495a1f5a.cpp:
 REL/shared/g_fcbeda73.cpp:
 	.text       start:0x001224D0 end:0x001225F4
 
+REL/shared/g_b0545b0e.cpp:
+	.text       start:0x00122600 end:0x00122608
+
 REL/shared/g_3243ebe9.cpp:
 	.text       start:0x00122680 end:0x001226C8
 
@@ -1285,6 +1330,9 @@ REL/shared/g_3a7b3b60.cpp:
 
 REL/shared/g_3e44ab76.cpp:
 	.text       start:0x00124070 end:0x00124198
+
+REL/shared/g_f35453cc.cpp:
+	.text       start:0x00124DA0 end:0x00124DA8
 
 REL/shared/g_0ee1f825.cpp:
 	.text       start:0x00124DB0 end:0x00124DB8
@@ -1312,6 +1360,9 @@ REL/shared/g_52e63d9b.cpp:
 
 REL/shared/g_e46cb6d8.cpp:
 	.text       start:0x00129330 end:0x001293C8
+
+REL/shared/g_6eae5f93.cpp:
+	.text       start:0x00129E80 end:0x00129E94
 
 REL/shared/g_9a14bba1.cpp:
 	.text       start:0x0012AEE0 end:0x0012AF84

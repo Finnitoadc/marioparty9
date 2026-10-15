@@ -35,17 +35,38 @@ REL/shared/g_a15a3cb2.cpp:
 REL/shared/g_40e3f266.cpp:
 	.text       start:0x00002990 end:0x00002998
 
+REL/shared/g_968fc99d.cpp:
+	.text       start:0x00002D10 end:0x00002D88
+
+REL/shared/g_4a3668c7.cpp:
+	.text       start:0x000032E0 end:0x00003388
+
+REL/shared/g_22dff6de.cpp:
+	.text       start:0x00007930 end:0x00007A00
+
 REL/shared/g_e0e78600.cpp:
 	.text       start:0x00009FC0 end:0x00009FD0
 
 REL/shared/g_6f937d49.cpp:
 	.text       start:0x0000A170 end:0x0000A178
 
+REL/shared/g_f4211936.cpp:
+	.text       start:0x0000A180 end:0x0000A18C
+
 REL/shared/g_a6e988cb.cpp:
 	.text       start:0x0000A8C0 end:0x0000A918
 
+REL/shared/g_f49bd07f.cpp:
+	.text       start:0x0000CCD0 end:0x0000CD78
+
+REL/shared/g_ecc9b07e.cpp:
+	.text       start:0x0000CD80 end:0x0000CD8C
+
 REL/shared/g_560134cd.cpp:
 	.text       start:0x0000CD90 end:0x0000CD9C
+
+REL/shared/g_caeede6d.cpp:
+	.text       start:0x0000CDA0 end:0x0000CDAC
 
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x0000CE10 end:0x0000CE74

@@ -86,11 +86,17 @@ REL/shared/g_007f666f.cpp:
 REL/shared/g_71e4e6b1.cpp:
 	.text       start:0x0000BE50 end:0x0000BE6C
 
+REL/shared/g_ba6d8d83.cpp:
+	.text       start:0x0000C3E0 end:0x0000C40C
+
 REL/shared/g_92278b4a.cpp:
 	.text       start:0x0000C420 end:0x0000C444
 
 REL/shared/g_dda170d1.cpp:
 	.text       start:0x0000D680 end:0x0000D688
+
+REL/shared/g_dfe17556.cpp:
+	.text       start:0x0000D690 end:0x0000D698
 
 REL/shared/g_d8a5d800.cpp:
 	.text       start:0x0000DF70 end:0x0000DF78
@@ -118,6 +124,12 @@ REL/shared/g_56f7e213.cpp:
 
 REL/shared/g_40e3f266.cpp:
 	.text       start:0x00017500 end:0x00017508
+
+REL/shared/g_5b814380.cpp:
+	.text       start:0x000183E0 end:0x00018460
+
+REL/shared/g_702f1ab6.cpp:
+	.text       start:0x00018670 end:0x00018678
 
 REL/shared/g_15e0da38.cpp:
 	.text       start:0x00019E10 end:0x00019E1C
@@ -149,14 +161,35 @@ REL/shared/g_37973916.cpp:
 REL/shared/g_7875277f.cpp:
 	.text       start:0x0001C910 end:0x0001C928
 
+REL/shared/g_87c25471.cpp:
+	.text       start:0x0001E8E0 end:0x0001E938
+
+REL/shared/g_8ccb1fa9.cpp:
+	.text       start:0x0001F920 end:0x0001F92C
+
 REL/shared/g_75c7b5bf.cpp:
 	.text       start:0x000215C0 end:0x000215C8
 
 REL/shared/g_49c141e5.cpp:
 	.text       start:0x000215D0 end:0x000215D8
 
+REL/shared/g_b4d2eb3f.cpp:
+	.text       start:0x00022140 end:0x00022148
+
+REL/shared/g_bd978fe0.cpp:
+	.text       start:0x00022150 end:0x00022158
+
+REL/shared/g_b03c4c8a.cpp:
+	.text       start:0x000226A0 end:0x000226A8
+
 REL/shared/g_e73a2171.cpp:
 	.text       start:0x000239C0 end:0x000239DC
+
+REL/shared/g_de39fdb4.cpp:
+	.text       start:0x000241A0 end:0x000241A8
+
+REL/shared/g_eab7421c.cpp:
+	.text       start:0x00024250 end:0x00024258
 
 REL/shared/g_2cf61056.cpp:
 	.text       start:0x00024B50 end:0x00024B60
@@ -442,6 +475,9 @@ REL/shared/g_2610fd88.cpp:
 
 REL/shared/g_170773cb.cpp:
 	.text       start:0x00048130 end:0x000481F4
+
+REL/shared/g_6627d9b0.cpp:
+	.text       start:0x000482F0 end:0x0004830C
 
 REL/shared/g_0a501a14.cpp:
 	.text       start:0x00048310 end:0x00048354

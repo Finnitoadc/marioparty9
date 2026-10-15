@@ -86,6 +86,9 @@ REL/shared/g_71e4e6b1.cpp:
 REL/shared/g_585af956.cpp:
 	.text       start:0x00015930 end:0x00015A28
 
+REL/shared/g_81f90a40.cpp:
+	.text       start:0x00015B70 end:0x00015BE4
+
 REL/shared/g_aa0516c2.cpp:
 	.text       start:0x00015CB0 end:0x00015CBC
 
@@ -580,6 +583,9 @@ REL/shared/g_807a1934.cpp:
 
 REL/shared/g_fb6a8860.cpp:
 	.text       start:0x0004AC50 end:0x0004ACE4
+
+REL/shared/g_90c43f45.cpp:
+	.text       start:0x0004ADC0 end:0x0004ADCC
 
 REL/shared/g_04f6cca6.cpp:
 	.text       start:0x0004ADD0 end:0x0004ADD8

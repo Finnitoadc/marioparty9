@@ -11,6 +11,9 @@ REL/global_destructor_chain.c:
 	.dtors      start:0x00000000 end:0x00000004
 	.bss        start:0x00000000 end:0x00000004
 
+REL/shared/g_9039e7ad.cpp:
+	.text       start:0x000009E0 end:0x000009E8
+
 REL/shared/g_b640e006.cpp:
 	.text       start:0x00001850 end:0x00001890
 
@@ -41,8 +44,14 @@ REL/shared/g_f05dcbd3.cpp:
 REL/shared/g_67da5442.cpp:
 	.text       start:0x000057C0 end:0x000057C8
 
+REL/shared/g_22dff6de.cpp:
+	.text       start:0x00007ED0 end:0x00007FA0
+
 REL/shared/g_6f937d49.cpp:
 	.text       start:0x0000A540 end:0x0000A548
+
+REL/shared/g_f4211936.cpp:
+	.text       start:0x0000A550 end:0x0000A55C
 
 REL/shared/g_6c3db20a.cpp:
 	.text       start:0x0000B160 end:0x0000B178

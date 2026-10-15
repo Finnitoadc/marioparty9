@@ -17,11 +17,17 @@ REL/shared/zero3.cpp:
 REL/shared/g_d95c1e8f.cpp:
 	.text       start:0x00001210 end:0x00001228
 
+REL/shared/g_97de1942.cpp:
+	.text       start:0x00001FA0 end:0x00001FA8
+
 REL/shared/g_76e11079.cpp:
 	.text       start:0x0000A070 end:0x0000A078
 
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x0000A8C0 end:0x0000A924
+
+REL/shared/g_8644c4dd.cpp:
+	.text       start:0x0000BA50 end:0x0000BAA8
 
 REL/shared/g_776cb955.cpp:
 	.text       start:0x0000C410 end:0x0000C470

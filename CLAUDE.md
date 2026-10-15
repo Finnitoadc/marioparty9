@@ -102,6 +102,13 @@ python configure.py && ninja          # tiene que decir 116 files OK
   comparaciones ni saltos de lógica). Si la función tiene prólogo, `bl`, `fcmpo`/saltos o mezcla
   `fabs`/`fmuls` con `ps_*`, es C con paired singles inlineados: escribirla entera en asm no
   cuenta como decompilada (va a `wip/`).
+- **Paired singles inlineados en C**: helper `static inline` en C que recibe
+  `register const Vec* a, register Vec* out` y contiene un bloque `asm { psq_l x, 0(a), 0, 0 ... }`
+  con locales `register float y, x;` (no registros fijos). Se inlinea y se programa con el
+  código de alrededor. Las funciones `asm inline` / `static asm inline` NO se inlinean (dan
+  `bl`). En el asm de MWCC el registro de cuantización se escribe `0`, no `qr0`.
+- Structs de más de 8 bytes por valor se pasan por puntero oculto: si la función carga
+  directamente de r4/r5 como si fueran punteros, prueba `void f(Q* dst, P a, P b)` (`g_a028158b.cpp`).
 - `fn_8020B514` es `operator new`: `void* p = fn_8020B514(size); if (p) p = ctor(p);`
   (ver `g_1f25f6da.cpp`). `fn_8020BCD0(arr, dtor, size, n)` es `__destroy_arr`; pasar el
   destructor como `(void*)shared_g_XXXX`.

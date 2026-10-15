@@ -44,6 +44,9 @@ REL/shared/g_776cb955.cpp:
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x00001AD0 end:0x00001B34
 
+REL/shared/g_8644c4dd.cpp:
+	.text       start:0x00002400 end:0x00002458
+
 REL/shared/g_049107ea.cpp:
 	.text       start:0x00002980 end:0x000029D8
 

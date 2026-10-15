@@ -81,3 +81,25 @@ ab00d6c3 copia de global lbl_80237470
 f5d44e48 stw antes de addi (scheduling)
 aa9e2eb8 C con paired singles inline (PSVECScale+Add)
 983f5d82 C con paired singles inline (no vale como asm)
+9067a366 asignacion de registros en bucle
+cb36bb42 list remove: registros y layout de saltos
+fa02abdc destructor vector virtual: orden slwi/subf
+f827005e conteo de rangos: scheduling
+b51916dd fragmento de funcion (no es funcion completa)
+b264b033 C con PSVECAdd inline
+bda31024 copia de global de 12 bytes (addi antes de lwz)
+8a42e3fc scheduling float + stores muertos
+fae93e99 orden stw r9 / li r8
+c59181e6 orden de llamadas y registros en if id==4
+40b4fbb7 tres clears de vector: scheduling
+8a76f116 C con paired singles inline
+78fa22f0 deque pop_front: scheduling del bucle
+987faef2 ps inline: addi r5 materializado + prologo
+966408b2 cargas z,y,x y stores x,y,z (registros float)
+ca0c635c stw antes de cmpwi en idx++
+71a09a00 orden stb 0x192/0x191
+d2aea873 random_shuffle: registros guardados invertidos
+98907e14 clear de vector: orden slwi/subf
+8a66f14d clear de vector en destructor: orden slwi/subf
+170b23d3 frame 0x60 vs 0x30 (locales desconocidas)
+a6fa8ca4 registros temporales de mulli

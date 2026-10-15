@@ -20,6 +20,9 @@ REL/shared/g_8df7e362.cpp:
 REL/shared/g_b640e006.cpp:
 	.text       start:0x00000DA0 end:0x00000DE0
 
+REL/shared/g_15da004c.cpp:
+	.text       start:0x00000ED0 end:0x00000F60
+
 REL/shared/g_0ef56565.cpp:
 	.text       start:0x00000F60 end:0x00000FA8
 

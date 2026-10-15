@@ -68,11 +68,17 @@ REL/shared/g_776cb955.cpp:
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x000049D0 end:0x00004A34
 
+REL/shared/g_8644c4dd.cpp:
+	.text       start:0x00005300 end:0x00005358
+
 REL/shared/g_049107ea.cpp:
 	.text       start:0x00005880 end:0x000058D8
 
 REL/shared/g_f05dcbd3.cpp:
 	.text       start:0x000069C0 end:0x00006A1C
+
+REL/shared/g_8bb77a44.cpp:
+	.text       start:0x000088D0 end:0x000088E8
 
 REL/shared/g_6229ec4a.cpp:
 	.text       start:0x0000A6E0 end:0x0000A6E8
