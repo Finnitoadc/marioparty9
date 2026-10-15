@@ -98,8 +98,10 @@ python configure.py && ninja          # tiene que decir 116 files OK
 - Los nombres de la DOL pueden cambiar (p. ej. `fn_8020BDC8` → `__ptmf_test`). `cand2.json`
   tiene los nombres viejos y `trytext.py` los traduce con su tabla `ALIAS`. No llamar a
   funciones por el nombre viejo en el código.
-- **Solo rutinas hoja en asm**: si una función tiene prólogo o `bl`, es C con paired singles
-  inlineados; escribirla entera en asm no cuenta como decompilada (va a `wip/`).
+- **Solo rutinas hoja del SDK en asm** (PSVEC*/PSMTX*: solo instrucciones `ps_*`/`psq_*`, sin
+  comparaciones ni saltos de lógica). Si la función tiene prólogo, `bl`, `fcmpo`/saltos o mezcla
+  `fabs`/`fmuls` con `ps_*`, es C con paired singles inlineados: escribirla entera en asm no
+  cuenta como decompilada (va a `wip/`).
 - `fn_8020B514` es `operator new`: `void* p = fn_8020B514(size); if (p) p = ctor(p);`
   (ver `g_1f25f6da.cpp`). `fn_8020BCD0(arr, dtor, size, n)` es `__destroy_arr`; pasar el
   destructor como `(void*)shared_g_XXXX`.

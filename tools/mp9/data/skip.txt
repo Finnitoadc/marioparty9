@@ -64,3 +64,20 @@ a602948a copia de global con lwzu
 5ec1cc3d deque pop: orden de stores en copia de 48 bytes
 520f5b89 deque pop: igual que 5ec1cc3d
 390663e7 deque: store justo despues de calcular
+9e85db48 destructor vector de vectores: orden slwi/subf
+e56e2ae4 copias de 16/48 bytes: orden de stores
+f3ab355d deque pop_front: copia 48 bytes + recarga 0x44
+d85b6bd4 C con paired singles inline (no vale como asm)
+a970553f par mascara/puntero en pila: orden y registros
+99966faf destructor de array: asignacion de registros
+dfc7f2ad registros idx/x intercambiados
+dd52fee9 stw 0x88 antes de los stw de constante
+ad65bbd3 C con paired singles inline + min/max (no vale como asm)
+b1ff4c96 copy_backward de deque: scheduling y registros
+f0ad9b07 orden stb/cmpwi
+e128a072 destructor de array 16 bytes: orden slwi/subf
+cde9e11b operator!= de string SSO
+ab00d6c3 copia de global lbl_80237470
+f5d44e48 stw antes de addi (scheduling)
+aa9e2eb8 C con paired singles inline (PSVECScale+Add)
+983f5d82 C con paired singles inline (no vale como asm)

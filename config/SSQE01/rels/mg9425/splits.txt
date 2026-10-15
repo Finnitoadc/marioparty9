@@ -35,6 +35,9 @@ REL/shared/zero3.cpp:
 REL/shared/g_2340a535.cpp:
 	.text       start:0x00004BE0 end:0x00004C58
 
+REL/shared/g_a0f38e0e.cpp:
+	.text       start:0x00005300 end:0x00005310
+
 REL/shared/g_50064e06.cpp:
 	.text       start:0x00005BF0 end:0x00005C78
 
@@ -59,8 +62,14 @@ REL/shared/g_584ef421.cpp:
 REL/shared/g_19740b2a.cpp:
 	.text       start:0x0000D430 end:0x0000D470
 
+REL/shared/g_c52882d4.cpp:
+	.text       start:0x0000D510 end:0x0000D554
+
 REL/shared/g_2acd7675.cpp:
 	.text       start:0x0000D640 end:0x0000D68C
+
+REL/shared/g_e97d037f.cpp:
+	.text       start:0x0000D760 end:0x0000D7A8
 
 REL/shared/g_16623138.cpp:
 	.text       start:0x0000DC30 end:0x0000DC4C
@@ -130,6 +139,9 @@ REL/shared/g_50f8ca2f.cpp:
 
 REL/shared/g_627244bb.cpp:
 	.text       start:0x000144E0 end:0x00014550
+
+REL/shared/g_c896d3a8.cpp:
+	.text       start:0x00014C90 end:0x00014D40
 
 REL/shared/g_ba7a6941.cpp:
 	.text       start:0x000152F0 end:0x00015390
@@ -203,6 +215,9 @@ REL/shared/g_6c6c8c8f.cpp:
 REL/shared/g_d7cb249d.cpp:
 	.text       start:0x0001D730 end:0x0001D738
 
+REL/shared/g_c00c21b3.cpp:
+	.text       start:0x0001D760 end:0x0001D7C8
+
 REL/shared/g_71c0e71f.cpp:
 	.text       start:0x0001D8D0 end:0x0001D904
 
@@ -235,6 +250,9 @@ REL/shared/g_2b34b325.cpp:
 
 REL/shared/g_a02e02d4.cpp:
 	.text       start:0x00021810 end:0x00021854
+
+REL/shared/g_c53f8468.cpp:
+	.text       start:0x00021890 end:0x000218F4
 
 REL/shared/g_f0882af3.cpp:
 	.text       start:0x00021900 end:0x00021914
@@ -272,6 +290,12 @@ REL/shared/g_a7e478d5.cpp:
 REL/shared/g_a91cb0f2.cpp:
 	.text       start:0x000234B0 end:0x000234CC
 
+REL/shared/g_86498370.cpp:
+	.text       start:0x000234D0 end:0x000235FC
+
+REL/shared/g_d286b5ad.cpp:
+	.text       start:0x00024AA0 end:0x00024AAC
+
 REL/shared/g_9b37621c.cpp:
 	.text       start:0x000252E0 end:0x000252F8
 
@@ -283,6 +307,9 @@ REL/shared/g_19121d07.cpp:
 
 REL/shared/g_b12cfaea.cpp:
 	.text       start:0x00025440 end:0x00025484
+
+REL/shared/g_f66f599b.cpp:
+	.text       start:0x00025490 end:0x000254B4
 
 REL/shared/g_01f27c84.cpp:
 	.text       start:0x000255A0 end:0x000255E4
@@ -298,6 +325,9 @@ REL/shared/g_a2dd42cc.cpp:
 
 REL/shared/g_3421da52.cpp:
 	.text       start:0x00026520 end:0x000265B0
+
+REL/shared/g_dcb1cd21.cpp:
+	.text       start:0x00028C50 end:0x00028CE4
 
 REL/shared/g_d97f9cae.cpp:
 	.text       start:0x00029720 end:0x00029760
@@ -347,6 +377,12 @@ REL/shared/g_08918d04.cpp:
 REL/shared/g_1c8acefe.cpp:
 	.text       start:0x0002F400 end:0x0002F408
 
+REL/shared/g_b9a74b4c.cpp:
+	.text       start:0x0002F410 end:0x0002F418
+
+REL/shared/g_9986dcc9.cpp:
+	.text       start:0x0002F510 end:0x0002F580
+
 REL/shared/g_5e488482.cpp:
 	.text       start:0x0002F580 end:0x0002F634
 
@@ -379,6 +415,9 @@ REL/shared/g_afca3b89.cpp:
 
 REL/shared/g_621889d0.cpp:
 	.text       start:0x00031920 end:0x00031928
+
+REL/shared/g_dc1dc5e6.cpp:
+	.text       start:0x00031930 end:0x000319EC
 
 REL/shared/g_ebf52cfa.cpp:
 	.text       start:0x000322D0 end:0x00032334
@@ -452,6 +491,9 @@ REL/shared/g_86ca03d7.cpp:
 REL/shared/g_69a65eca.cpp:
 	.text       start:0x00036980 end:0x0003698C
 
+REL/shared/g_aa2810d3.cpp:
+	.text       start:0x00037A00 end:0x00037AB8
+
 REL/shared/g_6d4e649d.cpp:
 	.text       start:0x00038B20 end:0x00038B30
 
@@ -466,6 +508,9 @@ REL/shared/g_83da6437.cpp:
 
 REL/shared/g_807a1934.cpp:
 	.text       start:0x00038F50 end:0x00038FAC
+
+REL/shared/g_fb6a8860.cpp:
+	.text       start:0x000396D0 end:0x00039764
 
 REL/shared/g_04f6cca6.cpp:
 	.text       start:0x00039840 end:0x00039848
@@ -511,6 +556,9 @@ REL/shared/g_ea440d20.cpp:
 
 REL/shared/g_a8973041.cpp:
 	.text       start:0x0003AE00 end:0x0003AE08
+
+REL/shared/g_8e6a190c.cpp:
+	.text       start:0x0003B0D0 end:0x0003B14C
 
 REL/shared/g_8365ee7b.cpp:
 	.text       start:0x0003B150 end:0x0003B158
@@ -568,6 +616,9 @@ REL/shared/g_3c4a6199.cpp:
 
 REL/shared/g_3c1f615e.cpp:
 	.text       start:0x0003B4D0 end:0x0003B540
+
+REL/shared/g_a1829b90.cpp:
+	.text       start:0x0003B540 end:0x0003B5D0
 
 REL/shared/g_2a575f22.cpp:
 	.text       start:0x0003B5D0 end:0x0003B610

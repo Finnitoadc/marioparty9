@@ -1,0 +1,41 @@
+extern "C" void fn_80196180(int);
+extern "C" void fn_8019A090(int);
+extern "C" void fn_80199F30(int, int, int, int);
+extern "C" void fn_80199A90(int, int, int, int, int);
+extern "C" void fn_80199B10(int, int, int, int, int, int);
+extern "C" void fn_80199AD0(int, int, int, int, int);
+extern "C" void fn_80199B70(int, int, int, int, int, int);
+extern "C" void fn_80199D50(int, int);
+extern "C" void fn_80196F60(int);
+extern "C" void fn_8019C880(int);
+extern "C" void fn_8019A5B0(int);
+extern "C" void fn_8019A600(int);
+extern "C" void fn_8019A690(int);
+extern "C" void fn_80199E60(int, int, int, int, int);
+extern "C" void fn_8019A560(int, int, int, int);
+extern "C" void fn_801957D0();
+extern "C" void fn_80194F20(int, int);
+extern "C" void fn_80195810(int, int, int, int, int);
+
+extern "C" void shared_g_89c044b5() {
+    fn_80196180(0);
+    fn_8019A090(1);
+    fn_80199F30(0, 0xff, 0xff, 4);
+    fn_80199A90(0, 0xf, 0xf, 0xf, 0xa);
+    fn_80199B10(0, 0, 0, 0, 0, 0);
+    fn_80199AD0(0, 7, 5, 6, 7);
+    fn_80199B70(0, 0, 0, 0, 0, 0);
+    fn_80199D50(0, 0);
+    fn_80196F60(0);
+    fn_8019C880(0);
+    fn_8019A5B0(1);
+    fn_8019A600(0);
+    fn_8019A690(1);
+    fn_80199E60(7, 0, 0, 7, 0);
+    fn_8019A560(1, 4, 5, 5);
+    fn_801957D0();
+    fn_80194F20(9, 1);
+    fn_80195810(0, 9, 1, 4, 0);
+    fn_80194F20(0xb, 1);
+    fn_80195810(0, 0xb, 1, 5, 0);
+}

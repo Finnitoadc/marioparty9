@@ -32,6 +32,9 @@ REL/shared/g_b640e006.cpp:
 REL/shared/g_2b726490.cpp:
 	.text       start:0x00009BD0 end:0x00009C3C
 
+REL/shared/g_c896d3a8.cpp:
+	.text       start:0x0000A8B0 end:0x0000A960
+
 REL/shared/g_ba7a6941.cpp:
 	.text       start:0x0000AF10 end:0x0000AFB0
 

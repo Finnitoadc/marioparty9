@@ -26,6 +26,9 @@ REL/shared/zero1.cpp:
 REL/shared/g_6c3db20a.cpp:
 	.text       start:0x000026F0 end:0x00002708
 
+REL/shared/g_f66f599b.cpp:
+	.text       start:0x00002710 end:0x00002734
+
 REL/shared/g_37973916.cpp:
 	.text       start:0x00003060 end:0x00003068
 
@@ -58,6 +61,9 @@ REL/shared/g_1a9847c6.cpp:
 
 REL/shared/g_2b726490.cpp:
 	.text       start:0x00005E50 end:0x00005EBC
+
+REL/shared/g_c896d3a8.cpp:
+	.text       start:0x00006C00 end:0x00006CB0
 
 REL/shared/g_ba7a6941.cpp:
 	.text       start:0x00007260 end:0x00007300
@@ -173,6 +179,9 @@ REL/shared/g_2b34b325.cpp:
 REL/shared/g_a02e02d4.cpp:
 	.text       start:0x00013FA0 end:0x00013FE4
 
+REL/shared/g_c53f8468.cpp:
+	.text       start:0x00014020 end:0x00014084
+
 REL/shared/g_f0882af3.cpp:
 	.text       start:0x00014090 end:0x000140A4
 
@@ -206,6 +215,12 @@ REL/shared/g_a7e478d5.cpp:
 REL/shared/g_a91cb0f2.cpp:
 	.text       start:0x00015C40 end:0x00015C5C
 
+REL/shared/g_86498370.cpp:
+	.text       start:0x00015C60 end:0x00015D8C
+
+REL/shared/g_d286b5ad.cpp:
+	.text       start:0x00017230 end:0x0001723C
+
 REL/shared/g_9b37621c.cpp:
 	.text       start:0x000180D0 end:0x000180E8
 
@@ -226,6 +241,9 @@ REL/shared/g_e6e20ed2.cpp:
 
 REL/shared/g_67f78c2c.cpp:
 	.text       start:0x0001B9C0 end:0x0001BA78
+
+REL/shared/g_b8e6c3cd.cpp:
+	.text       start:0x0001BA80 end:0x0001BB44
 
 REL/shared/g_e06888f4.cpp:
 	.text       start:0x0001BBC0 end:0x0001BBC8
@@ -299,6 +317,9 @@ REL/shared/g_a2dd42cc.cpp:
 REL/shared/g_3421da52.cpp:
 	.text       start:0x00022EB0 end:0x00022F40
 
+REL/shared/g_dcb1cd21.cpp:
+	.text       start:0x000255E0 end:0x00025674
+
 REL/shared/g_d97f9cae.cpp:
 	.text       start:0x000260B0 end:0x000260F0
 
@@ -334,6 +355,12 @@ REL/shared/g_08918d04.cpp:
 
 REL/shared/g_1c8acefe.cpp:
 	.text       start:0x0002AB80 end:0x0002AB88
+
+REL/shared/g_b9a74b4c.cpp:
+	.text       start:0x0002AB90 end:0x0002AB98
+
+REL/shared/g_9986dcc9.cpp:
+	.text       start:0x0002AC90 end:0x0002AD00
 
 REL/shared/g_5e488482.cpp:
 	.text       start:0x0002AD00 end:0x0002ADB4

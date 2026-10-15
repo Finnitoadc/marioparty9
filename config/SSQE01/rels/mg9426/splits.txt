@@ -20,11 +20,17 @@ REL/shared/g_584ef421.cpp:
 REL/shared/g_19740b2a.cpp:
 	.text       start:0x00002490 end:0x000024D0
 
+REL/shared/g_c52882d4.cpp:
+	.text       start:0x00002570 end:0x000025B4
+
 REL/shared/g_2acd7675.cpp:
 	.text       start:0x00002760 end:0x000027AC
 
 REL/shared/g_40f6f4db.cpp:
 	.text       start:0x00002820 end:0x00002828
+
+REL/shared/g_e97d037f.cpp:
+	.text       start:0x00002830 end:0x00002878
 
 REL/shared/g_f05dcbd3.cpp:
 	.text       start:0x00002D50 end:0x00002DAC
@@ -89,6 +95,9 @@ REL/shared/g_0a315e44.cpp:
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x00014160 end:0x000141C4
 
+REL/shared/g_f66f599b.cpp:
+	.text       start:0x00016370 end:0x00016394
+
 REL/shared/g_6c3db20a.cpp:
 	.text       start:0x000163A0 end:0x000163B8
 
@@ -107,8 +116,14 @@ REL/shared/g_e6e20ed2.cpp:
 REL/shared/g_2d538699.cpp:
 	.text       start:0x00018380 end:0x000183B4
 
+REL/shared/g_f76eeed3.cpp:
+	.text       start:0x00018930 end:0x00018A10
+
 REL/shared/g_3c6dca95.cpp:
 	.text       start:0x00018F90 end:0x00018FCC
+
+REL/shared/g_92278b4a.cpp:
+	.text       start:0x00018FD0 end:0x00018FF4
 
 REL/shared/g_3d33f69b.cpp:
 	.text       start:0x00019000 end:0x0001903C
@@ -124,6 +139,9 @@ REL/shared/g_585af956.cpp:
 
 REL/shared/g_aa0516c2.cpp:
 	.text       start:0x00019DF0 end:0x00019DFC
+
+REL/shared/g_c170763e.cpp:
+	.text       start:0x0001A730 end:0x0001A788
 
 REL/shared/g_1f818a75.cpp:
 	.text       start:0x0001A790 end:0x0001A79C
@@ -145,6 +163,9 @@ REL/shared/g_473b1e35.cpp:
 
 REL/shared/g_1abf907b.cpp:
 	.text       start:0x0001BB80 end:0x0001BBA4
+
+REL/shared/g_9f9065bc.cpp:
+	.text       start:0x0001BBB0 end:0x0001BC50
 
 REL/shared/g_d8067967.cpp:
 	.text       start:0x0001CDF0 end:0x0001CE64
@@ -172,6 +193,9 @@ REL/shared/g_fc9c1319.cpp:
 
 REL/shared/g_627244bb.cpp:
 	.text       start:0x000213D0 end:0x00021440
+
+REL/shared/g_c896d3a8.cpp:
+	.text       start:0x00021B80 end:0x00021C30
 
 REL/shared/g_ba7a6941.cpp:
 	.text       start:0x000221E0 end:0x00022280
@@ -230,6 +254,9 @@ REL/shared/g_6c6c8c8f.cpp:
 REL/shared/g_d7cb249d.cpp:
 	.text       start:0x0002A4E0 end:0x0002A4E8
 
+REL/shared/g_c00c21b3.cpp:
+	.text       start:0x0002A510 end:0x0002A578
+
 REL/shared/g_71c0e71f.cpp:
 	.text       start:0x0002A680 end:0x0002A6B4
 
@@ -263,6 +290,9 @@ REL/shared/g_2b34b325.cpp:
 REL/shared/g_a02e02d4.cpp:
 	.text       start:0x0002E5C0 end:0x0002E604
 
+REL/shared/g_c53f8468.cpp:
+	.text       start:0x0002E640 end:0x0002E6A4
+
 REL/shared/g_671f8bfd.cpp:
 	.text       start:0x0002E6D0 end:0x0002E700
 
@@ -293,6 +323,12 @@ REL/shared/g_a7e478d5.cpp:
 REL/shared/g_a91cb0f2.cpp:
 	.text       start:0x00030260 end:0x0003027C
 
+REL/shared/g_86498370.cpp:
+	.text       start:0x00030280 end:0x000303AC
+
+REL/shared/g_d286b5ad.cpp:
+	.text       start:0x00031850 end:0x0003185C
+
 REL/shared/g_9b37621c.cpp:
 	.text       start:0x000327F0 end:0x00032808
 
@@ -311,6 +347,9 @@ REL/shared/g_377b72b0.cpp:
 REL/shared/g_3481c187.cpp:
 	.text       start:0x00036130 end:0x00036158
 
+REL/shared/g_b8e6c3cd.cpp:
+	.text       start:0x00036160 end:0x00036224
+
 REL/shared/g_e06888f4.cpp:
 	.text       start:0x00036310 end:0x00036318
 
@@ -328,6 +367,9 @@ REL/shared/g_a2dd42cc.cpp:
 
 REL/shared/g_3421da52.cpp:
 	.text       start:0x000375A0 end:0x00037630
+
+REL/shared/g_dcb1cd21.cpp:
+	.text       start:0x00039CD0 end:0x00039D64
 
 REL/shared/g_d97f9cae.cpp:
 	.text       start:0x0003A7A0 end:0x0003A7E0
@@ -356,6 +398,9 @@ REL/shared/g_03f0f2ae.cpp:
 REL/shared/g_0a501a14.cpp:
 	.text       start:0x0003C030 end:0x0003C074
 
+REL/shared/g_92512be3.cpp:
+	.text       start:0x0003C130 end:0x0003C138
+
 REL/shared/g_a7758c89.cpp:
 	.text       start:0x0003C200 end:0x0003C208
 
@@ -373,6 +418,12 @@ REL/shared/g_08918d04.cpp:
 
 REL/shared/g_1c8acefe.cpp:
 	.text       start:0x0003F380 end:0x0003F388
+
+REL/shared/g_b9a74b4c.cpp:
+	.text       start:0x0003F390 end:0x0003F398
+
+REL/shared/g_9986dcc9.cpp:
+	.text       start:0x0003F490 end:0x0003F500
 
 REL/shared/g_5e488482.cpp:
 	.text       start:0x0003F500 end:0x0003F5B4
