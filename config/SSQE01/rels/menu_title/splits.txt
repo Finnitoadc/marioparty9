@@ -59,6 +59,9 @@ REL/shared/g_d7cb249d.cpp:
 REL/shared/g_69a65eca.cpp:
 	.text       start:0x0000A750 end:0x0000A75C
 
+REL/shared/g_e89ac8ed.cpp:
+	.text       start:0x0000A760 end:0x0000A7C4
+
 REL/shared/g_9cb1aa21.cpp:
 	.text       start:0x0000A7D0 end:0x0000A7D8
 

@@ -77,6 +77,15 @@ REL/shared/g_7d366abe.cpp:
 REL/shared/g_1e84127c.cpp:
 	.text       start:0x00012350 end:0x000124B8
 
+REL/shared/g_5a8e0fcb.cpp:
+	.text       start:0x00013B00 end:0x00013B0C
+
+REL/shared/g_58736b1f.cpp:
+	.text       start:0x00013B10 end:0x00013B24
+
+REL/shared/g_73b95772.cpp:
+	.text       start:0x000153C0 end:0x000153E4
+
 REL/shared/g_8df7e362.cpp:
 	.text       start:0x00015510 end:0x00015534
 

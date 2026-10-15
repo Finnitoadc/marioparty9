@@ -35,6 +35,9 @@ REL/shared/g_40f6f4db.cpp:
 REL/shared/g_eb70ae66.cpp:
 	.text       start:0x00002510 end:0x00002518
 
+REL/shared/g_8de42f8f.cpp:
+	.text       start:0x00002520 end:0x00002564
+
 REL/shared/g_073e8e41.cpp:
 	.text       start:0x00003760 end:0x00003770
 
@@ -71,8 +74,14 @@ REL/shared/g_9cb1aa21.cpp:
 REL/shared/g_0a315e44.cpp:
 	.text       start:0x00004520 end:0x00004528
 
+REL/shared/g_70970fab.cpp:
+	.text       start:0x00004550 end:0x00004570
+
 REL/shared/g_2d538699.cpp:
 	.text       start:0x00004950 end:0x00004984
+
+REL/shared/g_970570d3.cpp:
+	.text       start:0x00005290 end:0x000052B0
 
 REL/shared/g_76e11079.cpp:
 	.text       start:0x00008880 end:0x00008888
@@ -107,6 +116,9 @@ REL/shared/g_a0f38e0e.cpp:
 REL/shared/g_ed5b9fcb.cpp:
 	.text       start:0x0000E850 end:0x0000E860
 
+REL/shared/g_a3b6d6c2.cpp:
+	.text       start:0x0000EBE0 end:0x0000EC54
+
 REL/shared/g_b12cfaea.cpp:
 	.text       start:0x00016640 end:0x00016684
 
@@ -115,6 +127,9 @@ REL/shared/g_d81af600.cpp:
 
 REL/shared/g_37973916.cpp:
 	.text       start:0x00017290 end:0x00017298
+
+REL/shared/g_c65e3b01.cpp:
+	.text       start:0x00018050 end:0x00018078
 
 REL/shared/g_7dd4f0e7.cpp:
 	.text       start:0x0001ADD0 end:0x0001ADE8
@@ -142,6 +157,9 @@ REL/shared/g_b59df4e1.cpp:
 
 REL/shared/g_69a65eca.cpp:
 	.text       start:0x00023B30 end:0x00023B3C
+
+REL/shared/g_b5e7a526.cpp:
+	.text       start:0x00023B50 end:0x00023B60
 
 REL/shared/g_9a50082d.cpp:
 	.text       start:0x00023B60 end:0x00023B74
@@ -187,6 +205,9 @@ REL/shared/g_1aaded9b.cpp:
 
 REL/shared/g_bb4d80a1.cpp:
 	.text       start:0x000295C0 end:0x000295D0
+
+REL/shared/g_1db5d175.cpp:
+	.text       start:0x0002B150 end:0x0002B15C
 
 REL/shared/g_c2157065.cpp:
 	.text       start:0x0002B750 end:0x0002B778
@@ -643,6 +664,9 @@ REL/shared/g_2ff5ad04.cpp:
 
 REL/shared/g_fb6a8860.cpp:
 	.text       start:0x0006C780 end:0x0006C814
+
+REL/shared/g_dac8309e.cpp:
+	.text       start:0x0006C820 end:0x0006C874
 
 REL/shared/g_04f6cca6.cpp:
 	.text       start:0x0006C950 end:0x0006C958

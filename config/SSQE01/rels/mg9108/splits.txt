@@ -62,6 +62,9 @@ REL/shared/g_d81af600.cpp:
 REL/shared/g_6c3db20a.cpp:
 	.text       start:0x0000FA10 end:0x0000FA28
 
+REL/shared/g_56368e14.cpp:
+	.text       start:0x0000FA70 end:0x0000FA94
+
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x00011720 end:0x00011784
 

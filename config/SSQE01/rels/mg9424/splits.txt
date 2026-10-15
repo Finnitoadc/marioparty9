@@ -140,6 +140,9 @@ REL/shared/g_2b726490.cpp:
 REL/shared/g_e11d0480.cpp:
 	.text       start:0x0000B350 end:0x0000B3FC
 
+REL/shared/g_1ef6b9f4.cpp:
+	.text       start:0x0000B400 end:0x0000B40C
+
 REL/shared/g_5236930c.cpp:
 	.text       start:0x0000B660 end:0x0000B694
 

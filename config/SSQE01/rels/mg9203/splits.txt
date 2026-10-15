@@ -38,8 +38,14 @@ REL/shared/g_40e3f266.cpp:
 REL/shared/g_968fc99d.cpp:
 	.text       start:0x00002D10 end:0x00002D88
 
+REL/shared/g_a38a9f6e.cpp:
+	.text       start:0x000032D0 end:0x000032D8
+
 REL/shared/g_4a3668c7.cpp:
 	.text       start:0x000032E0 end:0x00003388
+
+REL/shared/g_975d80b2.cpp:
+	.text       start:0x00003EA0 end:0x00003F14
 
 REL/shared/g_22dff6de.cpp:
 	.text       start:0x00007930 end:0x00007A00

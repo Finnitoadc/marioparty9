@@ -106,7 +106,11 @@ python configure.py && ninja          # tiene que decir 116 files OK
   `register const Vec* a, register Vec* out` y contiene un bloque `asm { psq_l x, 0(a), 0, 0 ... }`
   con locales `register float y, x;` (no registros fijos). Se inlinea y se programa con el
   código de alrededor. Las funciones `asm inline` / `static asm inline` NO se inlinean (dan
-  `bl`). En el asm de MWCC el registro de cuantización se escribe `0`, no `qr0`.
+  `bl`). En el asm de MWCC el registro de cuantización se escribe `0`, no `qr0`. Las
+  instrucciones dentro de un bloque no se reordenan (escribirlas en el orden del original).
+  Sin resolver: el original materializa `addi rN, r1, off` para temporales en pila, y MWCC
+  los pliega en el desplazamiento (`0x8(r1)`); bloquea `aa9e2eb8`, `11a593a4`, `3ca975e1`.
+- **Thunks** (`subi r3, r3, N; b fn`): en C, `void f(char* self) { fn(self - N); }`. No en asm.
 - Structs de más de 8 bytes por valor se pasan por puntero oculto: si la función carga
   directamente de r4/r5 como si fueran punteros, prueba `void f(Q* dst, P a, P b)` (`g_a028158b.cpp`).
 - `fn_8020B514` es `operator new`: `void* p = fn_8020B514(size); if (p) p = ctor(p);`

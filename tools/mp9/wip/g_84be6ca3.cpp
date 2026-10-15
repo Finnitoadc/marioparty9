@@ -1,0 +1,80 @@
+struct Pipe {
+    union {
+        unsigned char u8;
+        float f32;
+    };
+};
+
+struct Vec { float x, y, z; };
+
+struct O {
+    char pad[0x164];
+    unsigned field_164;
+    Vec v0;
+    Vec v1;
+    Vec v2;
+    Vec v3;
+};
+
+extern "C" {
+void fn_801981B0(int a);
+void fn_801981E0(int a, int b, int c, int d, int e, int f, int g);
+void shared_g_89c044b5(O* o);
+void* fn_80052990();
+void* fn_80132FA0(void* a, int b);
+void fn_8012E430(void* a, void* b);
+void fn_80191CC0(void* a);
+void fn_80191D30(void* a, void* b, void* c);
+void fn_8019C430(void* a, int b);
+void fn_8019C550(int a);
+void fn_80196C70(int a, int b, int c);
+}
+
+#define FIFO (*(volatile Pipe*)0xCC008000)
+
+struct Color { unsigned char r, g, b, a; };
+
+static inline void Vtx(const Vec& v, Color& c) {
+    float z = v.z;
+    float y = v.y;
+    float x = v.x;
+    FIFO.f32 = x;
+    FIFO.f32 = y;
+    FIFO.f32 = z;
+    unsigned char a;
+    unsigned char b;
+    unsigned char g;
+    unsigned char r;
+    r = c.r;
+    g = c.g;
+    b = c.b;
+    a = c.a;
+    FIFO.u8 = r;
+    FIFO.u8 = g;
+    FIFO.u8 = b;
+    FIFO.u8 = a;
+}
+
+extern "C" void shared_g_84be6ca3(O* self) {
+    Color col;
+    void* p;
+    char b40[0x30];
+    char b10[0x30];
+    fn_801981B0(1);
+    fn_801981E0(4, 0, 0, 1, 0, 0, 2);
+    fn_801981E0(5, 0, 0, 0, 0, 0, 2);
+    shared_g_89c044b5(self);
+    *(unsigned*)&col = self->field_164;
+    p = fn_80132FA0(fn_80052990(), 0);
+    fn_8012E430(&p, b40);
+    fn_80191CC0(b10);
+    fn_80191D30(b40, b10, b10);
+    fn_8019C430(b10, 0);
+    fn_8019C550(0);
+    fn_80196C70(0x98, 0, 4);
+    Color& c = col;
+    Vtx(self->v0, c);
+    Vtx(self->v1, c);
+    Vtx(self->v2, c);
+    Vtx(self->v3, c);
+}

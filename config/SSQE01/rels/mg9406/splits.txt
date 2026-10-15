@@ -557,6 +557,9 @@ REL/shared/g_a1ad74a1.cpp:
 REL/shared/g_fb6a8860.cpp:
 	.text       start:0x0003EF40 end:0x0003EFD4
 
+REL/shared/g_dac8309e.cpp:
+	.text       start:0x0003EFE0 end:0x0003F034
+
 REL/shared/g_04f6cca6.cpp:
 	.text       start:0x0003F110 end:0x0003F118
 

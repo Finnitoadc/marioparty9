@@ -103,3 +103,17 @@ d2aea873 random_shuffle: registros guardados invertidos
 8a66f14d clear de vector en destructor: orden slwi/subf
 170b23d3 frame 0x60 vs 0x30 (locales desconocidas)
 a6fa8ca4 registros temporales de mulli
+2c1bd545 puntero cargado en r4 + mr r3 (registro)
+62bbbbb2 switch lineal cmpwi/beq no reproducido
+7d709974 intentado por agente U6 (ver wip)
+49b417b0 intentado por agente U6 (ver wip)
+78e7b788 destructor con 3 clear(): slwi/subf + savegpr
+96c848e3 cola compartida b .L+5 desconocida
+9ebee677 epilogo: lwz r0 antes de psq_l
+84be6ca3 escritura GX FIFO: lbz intercalados con stfs
+1a0609c3 stfs despues de fcmpo + blr extra
+42208c7f switch lineal 0..4 + orden add
+5a6ad1cf copia de columnas: lfs/stfs intercalados
+01d1274a init de centinela de lista: base self+4
+6492e939 neg/or/srawi + rlwimi de bit
+e0cb23e6 escrituras FIFO: scheduling

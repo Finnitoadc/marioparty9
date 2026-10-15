@@ -50,6 +50,9 @@ REL/shared/g_cadf1cd8.cpp:
 REL/shared/g_ac87344e.cpp:
 	.text       start:0x0000BBF0 end:0x0000BBF8
 
+REL/shared/g_56368e14.cpp:
+	.text       start:0x0000D230 end:0x0000D254
+
 REL/shared/g_21cf1dfc.cpp:
 	.text       start:0x0000E900 end:0x0000E964
 

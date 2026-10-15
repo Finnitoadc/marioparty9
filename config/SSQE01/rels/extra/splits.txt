@@ -14,6 +14,9 @@ REL/global_destructor_chain.c:
 REL/shared/g_b640e006.cpp:
 	.text       start:0x00000220 end:0x00000260
 
+REL/shared/g_c26f7509.cpp:
+	.text       start:0x00000B10 end:0x00000B7C
+
 REL/shared/g_8df7e362.cpp:
 	.text       start:0x00001710 end:0x00001734
 

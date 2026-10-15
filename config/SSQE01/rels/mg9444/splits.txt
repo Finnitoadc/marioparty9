@@ -26,6 +26,12 @@ REL/shared/g_a645d15c.cpp:
 REL/shared/g_a028158b.cpp:
 	.text       start:0x00002620 end:0x00002634
 
+REL/shared/g_f485ae86.cpp:
+	.text       start:0x000026D0 end:0x00002734
+
+REL/shared/g_4177e0e7.cpp:
+	.text       start:0x00003210 end:0x00003258
+
 REL/shared/g_40e3f266.cpp:
 	.text       start:0x00003260 end:0x00003268
 
