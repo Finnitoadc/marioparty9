@@ -4,6 +4,20 @@ Decompilación byte a byte de Mario Party 9 (Wii, NTSC-U). El DOL y los 115 REL 
 **idénticos** al original. Regla de oro: **no se sube nada si `ninja` no termina con
 "116 files OK"**.
 
+## Estado actual (2026-10-14)
+
+- Rama de trabajo: **`decomp`** (la `main` del fork es solo el upstream, sin nada de esto).
+- DOL + 115 REL coinciden byte a byte (116 archivos OK).
+- ~19% de las funciones REL coinciden (994 grupos de funciones compartidas enlazados). Casi todo
+  es código de librería/plantillas (vectores, destructores, getters), no lógica de juego.
+- La cola de funciones compartidas está casi agotada: ~385 grupos sin intentar, ~930 copias
+  (hashes `0`–`7`: 194 grupos; `8`–`f`: 191), más el grupo grande `b876ffc0` (98 módulos, 158
+  instrucciones; deque-iterator copy con memmove), que nadie ha intentado a fondo. Lo ya
+  intentado y no resuelto está en `skip.txt` con el motivo y en `tools/mp9/wip/`.
+- **Lo que falta de verdad es el código propio de cada módulo** (minijuegos, tableros, menús):
+  ~81% de las funciones REL. Ahí es donde se entiende el juego y se pueden hacer mods. Ver la
+  sección "Código propio de un módulo".
+
 ## Puesta en marcha
 
 1. Extraer tu propia copia del juego:
@@ -28,7 +42,7 @@ En Windows la shell es Git Bash: las barras invertidas se pierden en heredocs; u
 - `tools/mp9/data/cand2.json` — grupos candidatos (asm normalizado + dónde está cada copia).
   Se amplía con `python tools/mp9/cand_extend.py <min_módulos> <max_instr>` (tras un `ninja`
   completo): agrega grupos nuevos sin tocar los existentes ni repetir funciones ya agrupadas.
-  Hoy incluye grupos de ≥3 módulos y ≤120 instrucciones.
+  Hoy incluye grupos de ≥2 módulos y ≤200 instrucciones.
 - `tools/mp9/data/skip.txt` — grupos que se intentaron y no salieron, con el motivo.
 - `tools/mp9/data/nonmatching.txt` — grupos registrados como `NonMatching`.
 - `tools/mp9/wip/` — intentos sin terminar (no se compilan).
@@ -151,12 +165,22 @@ python configure.py && ninja          # tiene que decir 116 files OK
   el orden `slwi`/`subf` en `clear()` de vectores de elementos virtuales y las copias de
   globales con `lwzu` (ver `skip.txt`).
 
+## Código propio de un módulo (siguiente paso)
+
+Las funciones que no son copias entre módulos están en `config/SSQE01/rels/<módulo>/` (splits y
+símbolos) y se decompilan igual que `src/REL/strap/` y `src/REL/Introduction/` (mirar
+`strap_main.cpp` como ejemplo). Recomendado: elegir **un** módulo pequeño, repartir módulos
+entre las personas (no por hash) y renombrar símbolos en `symbols.txt` a medida que se entienden.
+Esto sí requiere leer el asm (`build/SSQE01/<módulo>/asm/`) y usar objdiff para ver diferencias.
+
 ## Trabajar entre varios
 
 - Cada uno en su rama (`git checkout -b <nombre>/<tema>`); fusionar seguido con la rama
   principal (`decomp`).
 - **Repartirse la cola para no hacer el mismo grupo**: una persona toma los hashes que empiezan
   por `0`–`7` y la otra `8`–`f` (o acordar módulos concretos para código no compartido).
+- Antes de empezar un grupo o un módulo, hacer `git pull` y avisar al otro; `skip.txt` y
+  `tools/mp9/wip/` indican lo que ya se intentó.
 - Solo hace falta subir los `.cpp` nuevos + lo que genera `sync.py`. Si al fusionar hay
   conflictos en `config/SSQE01/rels/**` o `configure.py`, **no los resuelvas a mano**:
 
